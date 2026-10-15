@@ -1,0 +1,13 @@
+<%@ Master Language="VB" %>
+<!DOCTYPE html>
+<html><head runat="server"><title>Student Portal</title>
+<link href="site.css" rel="stylesheet" /></head><body>
+<form id="form1" runat="server">
+<header class="portal-head"><h1>Student Portal</h1></header>
+<nav><a href="Prog3.aspx">Home</a>
+     <a href="Prog3.aspx">Student Info</a>
+     <a href="Prog3.aspx">About</a></nav>
+<div class="wrapper">
+<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+</div><footer>Vidhyadeep University · 2026</footer>
+</form></body></html>

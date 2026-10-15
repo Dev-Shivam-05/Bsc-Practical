@@ -1,0 +1,7 @@
+Windows Developer Command Prompt with .NET Framework tools:
+  vbc.exe /target:exe /out:Hello.exe Hello.vb
+  ildasm.exe Hello.exe
+
+Inspect the IL method body: ldstr, call, and ret are examples of IL
+instructions. The CLR's JIT compiles IL to native instructions at run time.
+The commands and IL disassembly are NOT runtime-verified in this environment.

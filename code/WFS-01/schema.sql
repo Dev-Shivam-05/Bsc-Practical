@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS `employee_db` CHARACTER SET utf8mb4;
+USE `employee_db`;
+CREATE TABLE IF NOT EXISTS `employees` (
+  `id` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(140) NOT NULL,
+  `department` VARCHAR(80) NOT NULL,
+  `designation` VARCHAR(80) NOT NULL,
+  `salary` DECIMAL(12,2) NOT NULL CHECK (`salary` >= 0)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

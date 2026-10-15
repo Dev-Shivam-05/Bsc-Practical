@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS `product_db` CHARACTER SET utf8mb4;
+USE `product_db`;
+CREATE TABLE IF NOT EXISTS `products` (
+  `product_id` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `product_name` VARCHAR(120) NOT NULL,
+  `category` VARCHAR(80) NOT NULL,
+  `price` DECIMAL(12,2) NOT NULL CHECK (`price` >= 0),
+  `stock` INT UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

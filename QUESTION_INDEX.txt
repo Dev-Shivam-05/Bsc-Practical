@@ -1,0 +1,821 @@
+QUESTION INDEX - v1.0 (2026-10-15)
+Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
+==============================================================================
+
+##############################################################################
+# UNIX Assignment 2 - Shell Programming
+##############################################################################
+
+[UX-A2-01]  (VERIFIED)  Arithmetic operations
+  Q: Write a shell script to accept two numbers and perform addition, subtraction, multiplication, division, and modulus using arithmetic operators.
+  Folder: code/UX-A2-01/
+  Files: q01.sh
+  Keywords: add subtract multiply divide modulus sum plus minus calculation arithmetic two numbers
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q01.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q01.sh   (HAMESHA 'bash' se chalao. 'sh q01.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q01.sh  phir  ./q01.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q01.sh naam se save karo (Save as type: All Files), phir bash q01.sh
+
+[UX-A2-02]  (VERIFIED)  Largest among three numbers
+  Q: Write a shell script to accept three numbers and find the largest number using if-elif-else.
+  Folder: code/UX-A2-02/
+  Files: q02.sh
+  Keywords: largest greatest biggest maximum max three numbers if elif
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q02.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q02.sh   (HAMESHA 'bash' se chalao. 'sh q02.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q02.sh  phir  ./q02.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q02.sh naam se save karo (Save as type: All Files), phir bash q02.sh
+
+[UX-A2-03]  (VERIFIED)  Even/odd and positive/negative
+  Q: Write a shell script to accept a number and check whether it is even or odd. Also display whether the number is positive or negative.
+  Folder: code/UX-A2-03/
+  Files: q03.sh
+  Keywords: even odd positive negative zero sign parity
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q03.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q03.sh   (HAMESHA 'bash' se chalao. 'sh q03.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q03.sh  phir  ./q03.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q03.sh naam se save karo (Save as type: All Files), phir bash q03.sh
+
+[UX-A2-04]  (VERIFIED)  Multiplication table
+  Q: Write a shell script to accept a number and display its multiplication table from 1 to 10 using a loop.
+  Folder: code/UX-A2-04/
+  Files: q04.sh
+  Keywords: table multiplication loop for 1 to 10 pahada
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q04.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q04.sh   (HAMESHA 'bash' se chalao. 'sh q04.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q04.sh  phir  ./q04.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q04.sh naam se save karo (Save as type: All Files), phir bash q04.sh
+
+[UX-A2-05]  (VERIFIED)  Factorial
+  Q: Write a shell script to calculate the factorial of a given number using a for or while loop.
+  Folder: code/UX-A2-05/
+  Files: q05.sh
+  Keywords: factorial fact n! loop
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q05.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q05.sh   (HAMESHA 'bash' se chalao. 'sh q05.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q05.sh  phir  ./q05.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q05.sh naam se save karo (Save as type: All Files), phir bash q05.sh
+
+[UX-A2-06]  (VERIFIED)  Prime number check
+  Q: Write a shell script to check whether a given number is prime or not.
+  Folder: code/UX-A2-06/
+  Files: q06.sh
+  Keywords: prime number check composite
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q06.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q06.sh   (HAMESHA 'bash' se chalao. 'sh q06.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q06.sh  phir  ./q06.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q06.sh naam se save karo (Save as type: All Files), phir bash q06.sh
+
+[UX-A2-07]  (VERIFIED)  Prime numbers 1 to 100
+  Q: Write a shell script to display all prime numbers between 1 and 100.
+  Folder: code/UX-A2-07/
+  Files: q07.sh
+  Keywords: prime numbers range 1 to 100 between list all primes
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q07.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q07.sh   (HAMESHA 'bash' se chalao. 'sh q07.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q07.sh  phir  ./q07.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q07.sh naam se save karo (Save as type: All Files), phir bash q07.sh
+
+[UX-A2-08]  (VERIFIED)  Fibonacci series
+  Q: Write a shell script to generate the first N terms of the Fibonacci series.
+  Folder: code/UX-A2-08/
+  Files: q08.sh
+  Keywords: fibonacci fibo series n terms
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q08.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q08.sh   (HAMESHA 'bash' se chalao. 'sh q08.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q08.sh  phir  ./q08.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q08.sh naam se save karo (Save as type: All Files), phir bash q08.sh
+
+[UX-A2-09]  (VERIFIED)  Palindrome number
+  Q: Write a shell script to accept a number and check whether it is a palindrome.
+  Folder: code/UX-A2-09/
+  Files: q09.sh
+  Keywords: palindrome reverse same number
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q09.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q09.sh   (HAMESHA 'bash' se chalao. 'sh q09.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q09.sh  phir  ./q09.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q09.sh naam se save karo (Save as type: All Files), phir bash q09.sh
+
+[UX-A2-10]  (VERIFIED)  Reverse a number
+  Q: Write a shell script to accept a number and display its reverse.
+  Folder: code/UX-A2-10/
+  Files: q10.sh
+  Keywords: reverse number digits ulta
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q10.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q10.sh   (HAMESHA 'bash' se chalao. 'sh q10.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q10.sh  phir  ./q10.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q10.sh naam se save karo (Save as type: All Files), phir bash q10.sh
+
+[UX-A2-11]  (VERIFIED)  Sum of digits
+  Q: Write a shell script to accept a number and calculate the sum of all its digits.
+  Folder: code/UX-A2-11/
+  Files: q11.sh
+  Keywords: sum of digits digit total
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q11.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q11.sh   (HAMESHA 'bash' se chalao. 'sh q11.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q11.sh  phir  ./q11.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q11.sh naam se save karo (Save as type: All Files), phir bash q11.sh
+
+[UX-A2-12]  (VERIFIED)  Menu-driven calculator (case)
+  Q: Write a menu-driven shell script using case to perform addition, subtraction, multiplication, division, modulus, and exit operations.
+  Folder: code/UX-A2-12/
+  Files: q12.sh
+  Keywords: menu driven calculator case esac switch add subtract multiply divide modulus exit
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q12.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q12.sh   (HAMESHA 'bash' se chalao. 'sh q12.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q12.sh  phir  ./q12.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q12.sh naam se save karo (Save as type: All Files), phir bash q12.sh
+
+[UX-A2-13]  (VERIFIED)  String operations
+  Q: Write a shell script to accept a string and perform the following operations: Find string length; Compare two strings; Check whether the string is empty; Display the string in reverse.
+  Folder: code/UX-A2-13/
+  Files: q13.sh
+  Keywords: string length compare empty reverse string operations
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q13.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q13.sh   (HAMESHA 'bash' se chalao. 'sh q13.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q13.sh  phir  ./q13.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q13.sh naam se save karo (Save as type: All Files), phir bash q13.sh
+
+[UX-A2-14]  (VERIFIED)  File handling (exists / type / permissions)
+  Q: Write a shell script to accept a filename and check whether: The file exists; It is a regular file or directory; It has read, write, and execute permissions.
+  Folder: code/UX-A2-14/
+  Files: q14.sh
+  Keywords: file exists regular directory read write execute permission test -e -f -d -r -w -x
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q14.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q14.sh   (HAMESHA 'bash' se chalao. 'sh q14.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q14.sh  phir  ./q14.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q14.sh naam se save karo (Save as type: All Files), phir bash q14.sh
+
+[UX-A2-15]  (VERIFIED)  User-defined function (factorial)
+  Q: Write a shell script using a user-defined function to calculate the factorial, sum of digits, or prime number of a given number.
+  Folder: code/UX-A2-15/
+  Files: q15.sh
+  Keywords: function user defined factorial sum of digits prime
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q15.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q15.sh   (HAMESHA 'bash' se chalao. 'sh q15.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q15.sh  phir  ./q15.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q15.sh naam se save karo (Save as type: All Files), phir bash q15.sh
+
+##############################################################################
+# UNIX Assignment 3 - File Processing Utilities
+##############################################################################
+
+[UX-A3-01]  (VERIFIED)  Splitting files (split)
+  Q: Create a text file containing at least 20 lines and use the split command to divide it into smaller files. Display the generated files.
+  Folder: code/UX-A3-01/
+  Files: c01.sh
+  Keywords: split splitting file 20 lines smaller files part
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano c01.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash c01.sh   (HAMESHA 'bash' se chalao. 'sh c01.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x c01.sh  phir  ./c01.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke c01.sh naam se save karo (Save as type: All Files), phir bash c01.sh
+
+[UX-A3-02]  (VERIFIED)  Comparing files (cmp, diff)
+  Q: Create two text files and use cmp and diff commands to compare them. Display and explain the differences.
+  Folder: code/UX-A3-02/
+  Files: c02.sh
+  Keywords: compare cmp diff difference two files
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano c02.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash c02.sh   (HAMESHA 'bash' se chalao. 'sh c02.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x c02.sh  phir  ./c02.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke c02.sh naam se save karo (Save as type: All Files), phir bash c02.sh
+
+[UX-A3-03]  (VERIFIED)  Sorting names and marks (sort)
+  Q: Create a file containing a list of student names and marks. Use the sort command to: Sort names alphabetically. Sort marks in ascending order. Sort marks in descending order.
+  Folder: code/UX-A3-03/
+  Files: c03.sh
+  Keywords: sort sorting names alphabetically marks ascending descending reverse -n -r
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano c03.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash c03.sh   (HAMESHA 'bash' se chalao. 'sh c03.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x c03.sh  phir  ./c03.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke c03.sh naam se save karo (Save as type: All Files), phir bash c03.sh
+
+[UX-A3-04]  (VERIFIED)  Merging files (cat)
+  Q: Create two text files and merge their contents into a third file using suitable UNIX commands. Display the final merged file.
+  Folder: code/UX-A3-04/
+  Files: c04.sh
+  Keywords: merge merging combine concatenate cat third file
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano c04.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash c04.sh   (HAMESHA 'bash' se chalao. 'sh c04.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x c04.sh  phir  ./c04.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke c04.sh naam se save karo (Save as type: All Files), phir bash c04.sh
+
+[UX-A3-05]  (VERIFIED)  Ordering records by a field (sort -k)
+  Q: Create a file containing student records and arrange the records according to a particular field, such as name or marks, using the sort command.
+  Folder: code/UX-A3-05/
+  Files: c05.sh
+  Keywords: ordering order records field sort -k -t name marks
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano c05.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash c05.sh   (HAMESHA 'bash' se chalao. 'sh c05.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x c05.sh  phir  ./c05.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke c05.sh naam se save karo (Save as type: All Files), phir bash c05.sh
+
+[UX-A3-06]  (VERIFIED)  grep utility
+  Q: Create a text file containing student information. Use grep to: Search for a particular name. Display lines containing a specific word. Display the number of matching lines. Search without considering uppercase/lowercase.
+  Folder: code/UX-A3-06/
+  Files: c06.sh
+  Keywords: grep search pattern count -c ignore case -i
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano c06.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash c06.sh   (HAMESHA 'bash' se chalao. 'sh c06.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x c06.sh  phir  ./c06.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke c06.sh naam se save karo (Save as type: All Files), phir bash c06.sh
+
+[UX-A3-07]  (VERIFIED)  sed utility
+  Q: Create a text file and use sed commands to: Display selected lines. Replace a word with another word. Delete a particular line. Display lines containing a specific pattern.
+  Folder: code/UX-A3-07/
+  Files: c07.sh
+  Keywords: sed replace substitute delete line print selected lines pattern stream editor
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano c07.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash c07.sh   (HAMESHA 'bash' se chalao. 'sh c07.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x c07.sh  phir  ./c07.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke c07.sh naam se save karo (Save as type: All Files), phir bash c07.sh
+
+[UX-A3-08]  (VERIFIED)  awk field processing
+  Q: Create a file containing student details such as Roll No, Name, Course, and Marks. Use awk to display selected fields from the file.
+  Folder: code/UX-A3-08/
+  Files: c08.sh
+  Keywords: awk fields columns print $2 roll name course marks
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano c08.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash c08.sh   (HAMESHA 'bash' se chalao. 'sh c08.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x c08.sh  phir  ./c08.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke c08.sh naam se save karo (Save as type: All Files), phir bash c08.sh
+
+[UX-A3-09]  (VERIFIED)  awk calculation (total, average)
+  Q: Create a student marks file and write an awk command/program to calculate and display the total and average marks of each student.
+  Folder: code/UX-A3-09/
+  Files: c09.sh
+  Keywords: awk total average marks calculation sum
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano c09.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash c09.sh   (HAMESHA 'bash' se chalao. 'sh c09.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x c09.sh  phir  ./c09.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke c09.sh naam se save karo (Save as type: All Files), phir bash c09.sh
+
+[UX-A3-10]  (VERIFIED)  Combined practical: sort, grep, sed, awk on employees
+  Q: Create a file containing employee records with ID, Name, Department, and Salary. Use sort, grep, sed, and awk to: Sort employees by salary. Search employees from a particular department. Modify a department name. Display employees whose salary is above a specified amount.
+  Folder: code/UX-A3-10/
+  Files: c10.sh
+  Keywords: combined employee salary department sort grep sed awk above amount
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano c10.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash c10.sh   (HAMESHA 'bash' se chalao. 'sh c10.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x c10.sh  phir  ./c10.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke c10.sh naam se save karo (Save as type: All Files), phir bash c10.sh
+
+##############################################################################
+# UNIX Practical-1 (Unit 2) - official sheet
+##############################################################################
+
+[UX-P1-01]  (VERIFIED)  Basic UNIX commands
+  Q: Execute the following commands and write the output: clear, pwd, date, whoami, tty, uname -a, ls, ls -a, ls -i, mkdir foldername, cd foldername, touch filename.txt, cat > filename.txt, cat filename.txt, cat -n filename.txt, cp filename.txt copy.txt, wc filename.txt, diff filename.txt copy.txt, cd .., rmdir foldername
+  Folder: code/UX-P1-01/
+  Files: basic_commands.sh
+  Keywords: basic commands pwd date whoami tty uname ls mkdir cd touch cat cp wc diff rmdir clear
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano basic_commands.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash basic_commands.sh   (HAMESHA 'bash' se chalao. 'sh basic_commands.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x basic_commands.sh  phir  ./basic_commands.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke basic_commands.sh naam se save karo (Save as type: All Files), phir bash basic_commands.sh
+
+[UX-P1-02]  (VERIFIED)  Directory management
+  Q: Create a directory named UNIX_LAB. Create two subdirectories: Programs and Data. Navigate between the directories Programs. Create the hello.txt file in programs directory. Display the current working directory. Remove an empty directory.
+  Folder: code/UX-P1-02/
+  Files: directory_management.sh
+  Keywords: directory mkdir subdirectory UNIX_LAB Programs Data cd pwd rmdir hello.txt
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano directory_management.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash directory_management.sh   (HAMESHA 'bash' se chalao. 'sh directory_management.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x directory_management.sh  phir  ./directory_management.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke directory_management.sh naam se save karo (Save as type: All Files), phir bash directory_management.sh
+
+[UX-P1-03]  (VERIFIED)  File management
+  Q: Create three text files. [a.txt, b.txt, c.txt] in ty dir. Add content in the a.txt file. Copy one file. [a.txt into programm dir]. Copy in the same directory a.txt in the ty directory its must use cp command. Create another directory in the TY with the name [lab] and copy the file a.txt in that. Rename another file. [a.txt into z.txt] in programm dir. Delete one file. Display the directory contents using different options of ls.
+  Folder: code/UX-P1-03/
+  Files: file_management.sh
+  Keywords: file management create copy cp rename mv delete rm ls options a.txt ty lab programm
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano file_management.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash file_management.sh   (HAMESHA 'bash' se chalao. 'sh file_management.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x file_management.sh  phir  ./file_management.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke file_management.sh naam se save karo (Save as type: All Files), phir bash file_management.sh
+
+[UX-P1-04]  (VERIFIED)  File viewing commands
+  Q: Create a text file and perform: cat, more, less, head, tail, nl
+  Folder: code/UX-P1-04/
+  Files: file_viewing.sh
+  Keywords: view cat more less head tail nl file viewing
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano file_viewing.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash file_viewing.sh   (HAMESHA 'bash' se chalao. 'sh file_viewing.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x file_viewing.sh  phir  ./file_viewing.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke file_viewing.sh naam se save karo (Save as type: All Files), phir bash file_viewing.sh
+
+[UX-P1-05]  (VERIFIED)  File comparison (cmp, diff, comm)
+  Q: Create two text files and compare them using: cmp, diff, comm. Write the observations.
+  Folder: code/UX-P1-05/
+  Files: file_comparison.sh
+  Keywords: compare cmp diff comm comparison observations
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano file_comparison.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash file_comparison.sh   (HAMESHA 'bash' se chalao. 'sh file_comparison.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x file_comparison.sh  phir  ./file_comparison.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke file_comparison.sh naam se save karo (Save as type: All Files), phir bash file_comparison.sh
+
+[UX-P1-06]  (VERIFIED)  File processing (wc sort uniq cut paste tr)
+  Q: Use the following commands: wc, sort, uniq, cut, paste, tr
+  Folder: code/UX-P1-06/
+  Files: file_processing.sh
+  Keywords: wc sort uniq cut paste tr text processing
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano file_processing.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash file_processing.sh   (HAMESHA 'bash' se chalao. 'sh file_processing.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x file_processing.sh  phir  ./file_processing.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke file_processing.sh naam se save karo (Save as type: All Files), phir bash file_processing.sh
+
+[UX-P1-07]  (VERIFIED)  File permissions (chmod)
+  Q: Display permissions using ls -l. Change permissions using symbolic mode. Change permissions using numeric mode. Explain permissions of each file.
+  Folder: code/UX-P1-07/
+  Files: file_permissions.sh
+  Keywords: permission chmod ls -l symbolic numeric 755 644 rwx
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano file_permissions.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash file_permissions.sh   (HAMESHA 'bash' se chalao. 'sh file_permissions.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x file_permissions.sh  phir  ./file_permissions.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke file_permissions.sh naam se save karo (Save as type: All Files), phir bash file_permissions.sh
+
+##############################################################################
+# UNIX Practical-2 (Unit 3) - official sheet
+##############################################################################
+
+[UX-P2-01]  (VERIFIED)  Environment variables
+  Q: Display environment variables. Create a user-defined variable. Display the variable. Remove the variable.
+  Folder: code/UX-P2-01/
+  Files: env_variables.sh
+  Keywords: environment variables env printenv unset user defined variable shell variable
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano env_variables.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash env_variables.sh   (HAMESHA 'bash' se chalao. 'sh env_variables.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x env_variables.sh  phir  ./env_variables.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke env_variables.sh naam se save karo (Save as type: All Files), phir bash env_variables.sh
+
+[UX-P2-02]  (VERIFIED)  First shell script (name, enrollment, course, date)
+  Q: Write a shell script that prints: Your Name, Enrollment Number, Course, Current Date and Time
+  Folder: code/UX-P2-02/
+  Files: my_details.sh
+  Keywords: first script name enrollment course date time echo
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano my_details.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash my_details.sh   (HAMESHA 'bash' se chalao. 'sh my_details.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x my_details.sh  phir  ./my_details.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke my_details.sh naam se save karo (Save as type: All Files), phir bash my_details.sh
+
+[UX-P2-03]  (VERIFIED)  Arithmetic operations (same as UX-A2-01)
+  Q: Write a shell script to: Add two numbers. Subtract two numbers. Multiply two numbers. Divide two numbers.
+  Folder: code/UX-P2-03/
+  Files: q01.sh
+  Keywords: add subtract multiply divide arithmetic
+  NOTE: Same program as UX-A2-01 (also prints modulus - extra, harmless).
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q01.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q01.sh   (HAMESHA 'bash' se chalao. 'sh q01.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q01.sh  phir  ./q01.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q01.sh naam se save karo (Save as type: All Files), phir bash q01.sh
+
+[UX-P2-04]  (VERIFIED)  Even or odd (same as UX-A2-03)
+  Q: Write a shell script to check whether a number is Even or Odd.
+  Folder: code/UX-P2-04/
+  Files: q03.sh
+  Keywords: even odd
+  NOTE: Same program as UX-A2-03 (also prints positive/negative - extra).
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q03.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q03.sh   (HAMESHA 'bash' se chalao. 'sh q03.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q03.sh  phir  ./q03.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q03.sh naam se save karo (Save as type: All Files), phir bash q03.sh
+
+[UX-P2-05]  (VERIFIED)  Largest of three (same as UX-A2-02)
+  Q: Write a shell script to find the largest among three numbers.
+  Folder: code/UX-P2-05/
+  Files: q02.sh
+  Keywords: largest greatest three numbers
+  NOTE: Same program as UX-A2-02. Source sheet numbering is irregular (Practical 5 / Question 6).
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q02.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q02.sh   (HAMESHA 'bash' se chalao. 'sh q02.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q02.sh  phir  ./q02.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q02.sh naam se save karo (Save as type: All Files), phir bash q02.sh
+
+[UX-P2-07]  (AMBIGUOUS)  Student grade (nested if)
+  Q: Write a shell script that accepts marks and displays the grade: A, B, C, D, Fail
+  Folder: code/UX-P2-07/
+  Files: grade.sh
+  Keywords: grade marks nested if A B C D fail result
+  NOTE: Grade boundaries are NOT given in the question. Assumed: A>=80, B>=60, C>=50, D>=35, else Fail. Change if the teacher gives other limits.
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano grade.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash grade.sh   (HAMESHA 'bash' se chalao. 'sh grade.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x grade.sh  phir  ./grade.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke grade.sh naam se save karo (Save as type: All Files), phir bash grade.sh
+
+[UX-P2-09]  (VERIFIED)  Menu-driven calculator (same as UX-A2-12)
+  Q: Create a menu-driven calculator using the case statement for: Addition, Subtraction, Multiplication, Division, Exit
+  Folder: code/UX-P2-09/
+  Files: q12.sh
+  Keywords: menu calculator case
+  NOTE: Same program as UX-A2-12 (also has modulus - extra).
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q12.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q12.sh   (HAMESHA 'bash' se chalao. 'sh q12.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q12.sh  phir  ./q12.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q12.sh naam se save karo (Save as type: All Files), phir bash q12.sh
+
+[UX-P2-11]  (VERIFIED)  Loops: 1 to 10, table, sum of first N
+  Q: Write shell scripts to: Print numbers from 1 to 10. Display the multiplication table of a given number. Find the sum of the first N numbers.
+  Folder: code/UX-P2-11/
+  Files: loops.sh
+  Keywords: loop for while print 1 to 10 table sum of first n numbers natural
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano loops.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash loops.sh   (HAMESHA 'bash' se chalao. 'sh loops.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x loops.sh  phir  ./loops.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke loops.sh naam se save karo (Save as type: All Files), phir bash loops.sh
+
+[UX-P2-12]  (VERIFIED)  Factorial and Fibonacci (same as UX-A2-05 + UX-A2-08)
+  Q: Write shell scripts to: Find the factorial of a number. Generate the Fibonacci series.
+  Folder: code/UX-P2-12/
+  Files: q05.sh, q08.sh
+  Keywords: factorial fibonacci
+  NOTE: Factorial = UX-A2-05 (q05.sh). Fibonacci = UX-A2-08 (q08.sh). Both are needed for this question.
+  Run:
+    1. Linux/Ubuntu terminal kholo. Folder me jao jahan file save karni hai (ya naya: mkdir prac; cd prac).
+    2. nano q05.sh   -> code paste karo (Ctrl+Shift+V) -> Ctrl+O, Enter (save) -> Ctrl+X (exit).
+    3. bash q05.sh   (HAMESHA 'bash' se chalao. 'sh q05.sh' mat likhna - Ubuntu par sh = dash hai, ye script fail hogi.)
+    4. Option: chmod +x q05.sh  phir  ./q05.sh
+    5. Windows lab ho to: Git Bash kholo, Notepad me code paste karke q05.sh naam se save karo (Save as type: All Files), phir bash q05.sh
+    6. Is question ke liye DONO files chalao: bash q05.sh (factorial) aur bash q08.sh (fibonacci).
+
+##############################################################################
+# ASP.NET Basic / Foundation practicals (index page 2)
+##############################################################################
+
+[ASP-B-01]  (UNTESTED)  Simple ASP.NET page
+  Q: Create a simple ASP.NET PAGE
+  Folder: code/ASP-B-01/
+  Files: Default.aspx, style.css
+  Keywords: simple first page hello aspx
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
+    2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+
+[ASP-B-02]  (UNTESTED)  Code-behind coding
+  Q: DEMONSTRATE CODE-BEHIND CODING
+  Folder: code/ASP-B-02/
+  Files: Default.aspx, Default.aspx.vb, style.css
+  Keywords: code behind codefile aspx.vb separate
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
+    2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+
+[ASP-B-03]  (UNTESTED)  Inline coding
+  Q: Demonstrate inline coding
+  Folder: code/ASP-B-03/
+  Files: Default.aspx, style.css
+  Keywords: inline code <% %> script runat server single file
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
+    2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+
+[ASP-B-04]  (UNTESTED)  MSIL compilation
+  Q: Demonstrate MSIL compilation
+  Folder: code/ASP-B-04/
+  Files: Hello.vb, Build_And_Inspect.txt, style.css
+  Keywords: msil il ildasm vbc compile intermediate language
+  Run:
+    1. Visual Studio 'Developer Command Prompt' kholo (ya normal cmd).
+    2. "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\vbc.exe" Hello.vb   -> Hello.exe banega
+    3. Hello.exe   -> output dikhega
+    4. ildasm Hello.exe   -> MSIL code dikhega (ildasm Visual Studio Developer Command Prompt me milta hai). Build_And_Inspect.txt dekho.
+
+[ASP-B-05]  (UNTESTED)  CLR and exception handling
+  Q: Demonstrate CLR and Exception Handling
+  Folder: code/ASP-B-05/
+  Files: Default.aspx, Default.aspx.vb, style.css
+  Keywords: clr exception try catch finally divide by zero error handling
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
+    2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+
+[ASP-B-06]  (UNTESTED)  Encapsulation
+  Q: Demonstrate Encapsulation
+  Folder: code/ASP-B-06/
+  Files: Default.aspx, App_Code/StudentProfile.vb, Default.aspx.vb, style.css
+  Keywords: encapsulation class property private oop
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
+    2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+
+[ASP-B-07]  (UNTESTED)  Inheritance
+  Q: Demonstrate Inheritance
+  Folder: code/ASP-B-07/
+  Files: Default.aspx, App_Code/PersonBase.vb, App_Code/StudentRecord.vb, Default.aspx.vb, style.css
+  Keywords: inheritance inherits base class derived oop
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
+    2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+
+[ASP-B-08]  (UNTESTED)  Method overloading
+  Q: Demonstrate Method overloading
+  Folder: code/ASP-B-08/
+  Files: Default.aspx, App_Code/Calculator.vb, Default.aspx.vb, style.css
+  Keywords: method overloading overloads polymorphism same name
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
+    2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+
+[ASP-B-09]  (UNTESTED)  Button click event
+  Q: Demonstrate Button Click Event
+  Folder: code/ASP-B-09/
+  Files: Default.aspx, Default.aspx.vb, style.css
+  Keywords: button click event onclick handler
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
+    2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+
+[ASP-B-10]  (UNTESTED)  Mini practical: student information form
+  Q: Mini Practical: Student information form
+  Folder: code/ASP-B-10/
+  Files: Default.aspx, Default.aspx.vb, style.css
+  Keywords: student information form textbox dropdown radio submit mini practical
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
+    2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+
+##############################################################################
+# ASP.NET Assignment 2 - Web Forms (index page 1)
+##############################################################################
+
+[ASP-A2-01]  (UNTESTED)  GridView with SQL Server data binding
+  Q: Create an ASP.NET Web Form that uses a GridView control to display student records stored in a SQL Server database. Implement data binding so that the records are displayed dynamically in the GridView.
+  Folder: code/ASP-A2-01/
+  Files: Prog1.aspx, App_Code/Db.vb, HOW_TO_RUN.md, PracticalDB.sql, Prog1.aspx.vb, Web.config, site.css
+  Keywords: gridview sql server database data binding student records display
+  Run:
+    1. PEHLE database banao: SSMS me PracticalDB.sql open karke Execute (F5) karo. Ya cmd: sqlcmd -S "(localdb)\MSSQLLocalDB" -i PracticalDB.sql
+    2. Web.config me connectionString check karo: Data Source=(LocalDB)\MSSQLLocalDB. Lab me SQL Express ho to Data Source=.\SQLEXPRESS likho.
+    3. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog1.aspx hai).
+    4. Solution Explorer me Prog1.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    5. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    6. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog1.aspx
+
+[ASP-A2-02]  (UNTESTED)  Login form with validators
+  Q: Design a Login Form using ASP.NET Web Forms with Username and Password fields. Apply: RequiredFieldValidator for Username and Password. CompareValidator to compare Password and Confirm Password. Display appropriate validation error messages.
+  Folder: code/ASP-A2-02/
+  Files: Prog2.aspx, HOW_TO_RUN.md, PracticalDB.sql, Prog2.aspx.vb, Web.config, site.css
+  Keywords: login validation requiredfieldvalidator comparevalidator confirm password validator
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog2.aspx hai).
+    2. Solution Explorer me Prog2.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog2.aspx
+
+[ASP-A2-03]  (UNTESTED)  Master Page with student information
+  Q: Create a Master Page containing a Header, Navigation section, Footer, and a ContentPlaceHolder. Create a Content Page and attach it to the Master Page. Display student information inside the ContentPlaceHolder.
+  Folder: code/ASP-A2-03/
+  Files: Prog3.aspx, HOW_TO_RUN.md, PracticalDB.sql, Prog3.aspx.vb, Student.master, Web.config, site.css
+  Keywords: master page contentplaceholder header footer navigation content page
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog3.aspx hai).
+    2. Solution Explorer me Prog3.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog3.aspx
+
+[ASP-A2-04]  (UNTESTED)  Employee Management (CRUD)
+  Q: Employee Management: Create an ASP.NET Web Form to perform CRUD operations on an Employee table containing EmployeeID, EmployeeName, Department, Salary, and ContactNo.
+  Folder: code/ASP-A2-04/
+  Files: Prog4.aspx, App_Code/Db.vb, HOW_TO_RUN.md, PracticalDB.sql, Prog4.aspx.vb, Web.config, site.css
+  Keywords: employee crud insert update delete select salary department contact
+  Run:
+    1. PEHLE database banao: SSMS me PracticalDB.sql open karke Execute (F5) karo. Ya cmd: sqlcmd -S "(localdb)\MSSQLLocalDB" -i PracticalDB.sql
+    2. Web.config me connectionString check karo: Data Source=(LocalDB)\MSSQLLocalDB. Lab me SQL Express ho to Data Source=.\SQLEXPRESS likho.
+    3. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog4.aspx hai).
+    4. Solution Explorer me Prog4.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    5. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    6. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog4.aspx
+
+[ASP-A2-05]  (UNTESTED)  Customer Management (CRUD, ADO.NET)
+  Q: Customer Management: Create a customer registration form and implement CRUD operations using ADO.NET. Store CustomerID, CustomerName, Email, Phone, and Address.
+  Folder: code/ASP-A2-05/
+  Files: Prog5.aspx, App_Code/Db.vb, HOW_TO_RUN.md, PracticalDB.sql, Prog5.aspx.vb, Web.config, site.css
+  Keywords: customer registration crud ado.net email phone address
+  Run:
+    1. PEHLE database banao: SSMS me PracticalDB.sql open karke Execute (F5) karo. Ya cmd: sqlcmd -S "(localdb)\MSSQLLocalDB" -i PracticalDB.sql
+    2. Web.config me connectionString check karo: Data Source=(LocalDB)\MSSQLLocalDB. Lab me SQL Express ho to Data Source=.\SQLEXPRESS likho.
+    3. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog5.aspx hai).
+    4. Solution Explorer me Prog5.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    5. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    6. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog5.aspx
+
+[ASP-A2-06]  (UNTESTED)  Student Management CRUD with Master Page
+  Q: Create a Master Page containing Header, Menu, and Footer. Create a Student Management Content Page and implement complete CRUD operations. (field:- RollNo, Name, Age, Gender, Course)
+  Folder: code/ASP-A2-06/
+  Files: Prog6.aspx, App_Code/Db.vb, HOW_TO_RUN.md, PracticalDB.sql, Prog6.aspx.vb, Student.master, Web.config, site.css
+  Keywords: student management crud master page menu rollno age gender course
+  Run:
+    1. PEHLE database banao: SSMS me PracticalDB.sql open karke Execute (F5) karo. Ya cmd: sqlcmd -S "(localdb)\MSSQLLocalDB" -i PracticalDB.sql
+    2. Web.config me connectionString check karo: Data Source=(LocalDB)\MSSQLLocalDB. Lab me SQL Express ho to Data Source=.\SQLEXPRESS likho.
+    3. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog6.aspx hai).
+    4. Solution Explorer me Prog6.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    5. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    6. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog6.aspx
+
+[ASP-A2-07]  (UNTESTED)  Pharmacy Medicine Records (CRUD)
+  Q: Pharmacy Medicine Records: Create a Web Form for managing medicine records using CRUD operations. Store MedicineID, MedicineName, Category, Price, Quantity, and ExpiryDate.
+  Folder: code/ASP-A2-07/
+  Files: Prog7.aspx, App_Code/Db.vb, HOW_TO_RUN.md, PracticalDB.sql, Prog7.aspx.vb, Web.config, site.css
+  Keywords: pharmacy medicine crud category price quantity expiry date
+  Run:
+    1. PEHLE database banao: SSMS me PracticalDB.sql open karke Execute (F5) karo. Ya cmd: sqlcmd -S "(localdb)\MSSQLLocalDB" -i PracticalDB.sql
+    2. Web.config me connectionString check karo: Data Source=(LocalDB)\MSSQLLocalDB. Lab me SQL Express ho to Data Source=.\SQLEXPRESS likho.
+    3. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog7.aspx hai).
+    4. Solution Explorer me Prog7.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    5. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    6. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog7.aspx
+
+[ASP-A2-08]  (UNTESTED)  Login.aspx to Welcome.aspx (Response.Redirect)
+  Q: Create two Web Forms, Login.aspx and Welcome.aspx. After successful login, use the Response.Redirect() method to navigate from Login.aspx to Welcome.aspx
+  Folder: code/ASP-A2-08/
+  Files: Login.aspx, HOW_TO_RUN.md, Login.aspx.vb, PracticalDB.sql, Web.config, Welcome.aspx, Welcome.aspx.vb, site.css
+  Keywords: login welcome response.redirect redirect navigate two pages
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Login.aspx hai).
+    2. Solution Explorer me Login.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Login.aspx
+
+[ASP-A2-09]  (UNTESTED)  Store and read a Cookie
+  Q: Create an ASP.NET Web Form that accepts the user's name and stores it in a Cookie. On another page, retrieve the cookie and display the user's name.
+  Folder: code/ASP-A2-09/
+  Files: SetCookie.aspx, GetCookie.aspx, GetCookie.aspx.vb, HOW_TO_RUN.md, PracticalDB.sql, SetCookie.aspx.vb, Web.config, site.css
+  Keywords: cookie store retrieve httpcookie request.cookies response.cookies name
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme SetCookie.aspx hai).
+    2. Solution Explorer me SetCookie.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/SetCookie.aspx
+
+[ASP-A2-10]  (UNTESTED)  Login using Session and Cookies + Logout
+  Q: Login using Session and Cookies: Create a Login Web Form with Username and Password. After successful login: Store the username in a Session variable. Store the username in a Cookie. Redirect the user to a Welcome page using Response.Redirect(). Display the username on the Welcome page. Provide a Logout option to clear the Session.
+  Folder: code/ASP-A2-10/
+  Files: LoginSession.aspx, HOW_TO_RUN.md, LoginSession.aspx.vb, PracticalDB.sql, Web.config, WelcomeSession.aspx, WelcomeSession.aspx.vb, site.css
+  Keywords: session cookie login logout welcome redirect state management
+  Run:
+    1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme LoginSession.aspx hai).
+    2. Solution Explorer me LoginSession.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
+    3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
+    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/LoginSession.aspx
+
+##############################################################################
+# WFS Assignment 2 - PHP, MySQL, AJAX
+##############################################################################
+
+[WFS-01]  (VERIFIED)  Employee Management System
+  Q: Employee Management System Develop a PHP and MySQL website to insert, display, update, and delete employee records containing Employee ID, Name, Email, Department, Designation, and Salary.
+  Folder: code/WFS-01/
+  Files: index.php, RUN_ME.md, common.php, db.php, delete.php, edit.php, model.php, rows.php, schema.sql, style.css
+  Keywords: employee php mysql crud insert display update delete email department designation salary
+  NOTE: Index PDF text is cut after 'Designation, and'; 'Salary' confirmed from friend's copy (DEVRAJ WFS practical assignment 2.pdf). Employee ID is AUTO_INCREMENT (not typed).
+  Run:
+    1. XAMPP Control Panel -> Apache START, MySQL START.
+    2. Ye poora folder copy karo: C:\xampp\htdocs\WFS-01\  (saari files ek saath, sub-folder mat banao).
+    3. Browser: http://localhost/phpmyadmin -> koi database select MAT karo -> Import tab -> schema.sql choose -> Import (Go). Database 'employee_db' khud ban jayega.
+    4. Browser: http://localhost/WFS-01/index.php
+    5. db.php default: host 127.0.0.1, user root, password khali ('') = XAMPP default. MySQL password ho to db.php line 9 me password daalo.
+
+[WFS-02]  (VERIFIED)  Course Management System
+  Q: Course Management System Develop a PHP and MySQL website to manage course details containing Course ID, Course Name, Duration, Fees, and Course Description. Implement Insert, Display, Update, and Delete operations.
+  Folder: code/WFS-02/
+  Files: index.php, RUN_ME.md, common.php, db.php, delete.php, edit.php, model.php, rows.php, schema.sql, style.css
+  Keywords: course php mysql crud duration fees description
+  Run:
+    1. XAMPP Control Panel -> Apache START, MySQL START.
+    2. Ye poora folder copy karo: C:\xampp\htdocs\WFS-02\  (saari files ek saath, sub-folder mat banao).
+    3. Browser: http://localhost/phpmyadmin -> koi database select MAT karo -> Import tab -> schema.sql choose -> Import (Go). Database 'course_db' khud ban jayega.
+    4. Browser: http://localhost/WFS-02/index.php
+    5. db.php default: host 127.0.0.1, user root, password khali ('') = XAMPP default. MySQL password ho to db.php line 9 me password daalo.
+
+[WFS-03]  (VERIFIED)  Product records with WHERE search
+  Q: Create a website using PHP and MySQL to manage product records in a database. Implement the following features: 1. Create a database and a table to store product information. 2. Insert new product records into the database. 3. Display all product records on the website. 4. Search for products using the WHERE clause.
+  Folder: code/WFS-03/
+  Files: index.php, RUN_ME.md, common.php, db.php, delete.php, edit.php, model.php, rows.php, schema.sql, style.css
+  Keywords: product php mysql search where clause insert display
+  Run:
+    1. XAMPP Control Panel -> Apache START, MySQL START.
+    2. Ye poora folder copy karo: C:\xampp\htdocs\WFS-03\  (saari files ek saath, sub-folder mat banao).
+    3. Browser: http://localhost/phpmyadmin -> koi database select MAT karo -> Import tab -> schema.sql choose -> Import (Go). Database 'product_db' khud ban jayega.
+    4. Browser: http://localhost/WFS-03/index.php
+    5. db.php default: host 127.0.0.1, user root, password khali ('') = XAMPP default. MySQL password ho to db.php line 9 me password daalo.
+
+[WFS-04]  (VERIFIED)  Customer Record Management (AJAX search, ORDER BY name)
+  Q: Customer Record Management System Create a website using PHP, MySQL, and AJAX to manage customer records in a database. Implement the following features: 1. Create a database and a table to store customer information. 2. Insert new customer records into the database. 3. Display all customer records on the website. 4. Implement AJAX-based search to retrieve matching customer records from the PHP backend. 5. Search customers by name or city using the WHERE clause. 6. Sort customer records by name using the ORDER BY clause. 7. Update existing customer information. 8. Delete customer records from the database.
+  Folder: code/WFS-04/
+  Files: index.php, RUN_ME.md, common.php, db.php, delete.php, edit.php, model.php, rows.php, schema.sql, search.php, style.css
+  Keywords: customer ajax search name city where order by sort update delete php mysql
+  Run:
+    1. XAMPP Control Panel -> Apache START, MySQL START.
+    2. Ye poora folder copy karo: C:\xampp\htdocs\WFS-04\  (saari files ek saath, sub-folder mat banao).
+    3. Browser: http://localhost/phpmyadmin -> koi database select MAT karo -> Import tab -> schema.sql choose -> Import (Go). Database 'customer_db' khud ban jayega.
+    4. Browser: http://localhost/WFS-04/index.php
+    5. db.php default: host 127.0.0.1, user root, password khali ('') = XAMPP default. MySQL password ho to db.php line 9 me password daalo.
+
+[WFS-05]  (VERIFIED)  Mobile Shop Management (AJAX search by brand, ORDER BY price)
+  Q: Mobile Shop Management System Create a website using PHP, MySQL, and AJAX to manage mobile phone records in a database. Implement the following features: 1. Create a database and a table to store mobile phone details. 2. Insert new mobile phone records into the database. 3. Display all mobile phone records on the website. 4. Implement AJAX-based search to retrieve matching mobile phone records from the PHP backend. 5. Search mobile phones by brand using the WHERE clause. 6. Sort mobile phone records by price using the ORDER BY clause. 7. Update existing mobile phone information. 8. Delete mobile phone records from the database.
+  Folder: code/WFS-05/
+  Files: index.php, RUN_ME.md, common.php, db.php, delete.php, edit.php, model.php, rows.php, schema.sql, search.php, style.css
+  Keywords: mobile phone shop ajax search brand price order by sort where php mysql
+  Run:
+    1. XAMPP Control Panel -> Apache START, MySQL START.
+    2. Ye poora folder copy karo: C:\xampp\htdocs\WFS-05\  (saari files ek saath, sub-folder mat banao).
+    3. Browser: http://localhost/phpmyadmin -> koi database select MAT karo -> Import tab -> schema.sql choose -> Import (Go). Database 'mobile_db' khud ban jayega.
+    4. Browser: http://localhost/WFS-05/index.php
+    5. db.php default: host 127.0.0.1, user root, password khali ('') = XAMPP default. MySQL password ho to db.php line 9 me password daalo.
