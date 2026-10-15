@@ -1,5 +1,7 @@
 # BCA / BSc.IT Sem-5 Practical Exam Companion (v1.0)
 
+## ⬇ [ONE-CLICK DOWNLOAD (ZIP)](https://github.com/Dev-Shivam-05/Bsc-Practical/archive/refs/heads/main.zip)
+
 **Exam computer par 3 step:**
 
 1. Upar green **Code** button → **Download ZIP** → ZIP par right-click → **Extract All**.

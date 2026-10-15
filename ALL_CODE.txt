@@ -725,9 +725,9 @@ rmdir foldername && echo "foldername removed"
 
 ----- TESTED OUTPUT -----
 --- pwd ---
-/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmp9u5odqq2
+/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpjmko_adf
 --- date ---
-Thu Oct 15 05:58:31 PM UTC 2026
+Thu Oct 15 06:07:16 PM UTC 2026
 --- whoami ---
 Dev-Shivam-05
 --- tty ---
@@ -742,7 +742,7 @@ basic_commands.sh
 ..
 basic_commands.sh
 --- ls -i ---
-3096224745301884 basic_commands.sh
+5348024558988316 basic_commands.sh
 --- cat filename.txt ---
 Hello UNIX
 This is my first file
@@ -775,11 +775,11 @@ ls
 
 ----- TESTED OUTPUT -----
 Now inside:
-/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmp_72030f_/UNIX_LAB/Programs
+/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpfv5c7n92/UNIX_LAB/Programs
 total 0
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 30 Oct 15 17:58 hello.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 30 Oct 15 18:07 hello.txt
 Back in:
-/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmp_72030f_/UNIX_LAB
+/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpfv5c7n92/UNIX_LAB
 Empty directory Data removed
 Programs
 
@@ -816,11 +816,11 @@ lab
 programm
 --- ls -l ---
 total 0
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 17:58 a_copy.txt
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 17:58 a.txt
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05   0 Oct 15 17:58 b.txt
-drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 17:58 lab
-drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 17:58 programm
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 18:07 a_copy.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 18:07 a.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05   0 Oct 15 18:07 b.txt
+drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 18:07 lab
+drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 18:07 programm
 --- ls -a ---
 .
 ..
@@ -1047,15 +1047,15 @@ echo "Read: r=4, w=2, x=1. 755 = rwx r-x r-x (owner, group, others). 644 = rw- r
 
 ----- TESTED OUTPUT -----
 --- default ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:58 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:07 perm.txt
 --- chmod u+x (symbolic) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:58 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:07 perm.txt
 --- chmod go-r (symbolic) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:58 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:07 perm.txt
 --- chmod 755 (numeric) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:58 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:07 perm.txt
 --- chmod 644 (numeric) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:58 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:07 perm.txt
 Read: r=4, w=2, x=1. 755 = rwx r-x r-x (owner, group, others). 644 = rw- r-- r--
 
 ==============================================================================
@@ -1087,7 +1087,7 @@ WSL2_GUI_APPS_ENABLED=1
 WSL_DISTRO_NAME=Debian
 NAME=Lappy
 PERF_EXEC_PATH=/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/libexec/perf-core
-PWD=/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpsaev0d1c
+PWD=/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpkt1s56bn
 LOGNAME=Dev-Shivam-05
 HOME=/home/Dev-Shivam-05
 LANG=en_US.UTF-8
@@ -1112,7 +1112,7 @@ echo "Date and Time     : $(date)"
 Name              : SHIVAM BHADORIYA
 Enrollment Number : 240606302109
 Course            : TY B.Sc. IT (Semester V)
-Date and Time     : Thu Oct 15 05:58:36 PM UTC 2026
+Date and Time     : Thu Oct 15 06:07:21 PM UTC 2026
 
 ==============================================================================
 UX-P2-03  Arithmetic operations (same as UX-A2-01)
