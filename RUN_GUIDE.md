@@ -12,16 +12,16 @@ Version: v1.0 (2026-10-15)
 ## 1. Aaj raat (abhi) kya karna hai
 
 1. Phone/laptop par GitHub repo kholo aur check karo ki khul raha hai (link final message me hai).
-2. Repo ka **naam yaad karo** ya likh lo: `Dev-Shivam-05/bca-sem5-practicals`.
+2. Repo ka **naam yaad karo** ya likh lo: `Dev-Shivam-05/Bsc-Practical`.
 3. Agar printout allowed hai → `original_pdfs/` ke 3 PDF print kar lo (backup, bina computer ke kaam aayega).
 4. Teacher/CR se confirm karo: exam me internet / GitHub open kar sakte hain ya nahi. Ye rule tum control nahi kar sakte.
 
 ## 2. Exam computer par: package lana (5 minute)
 
-1. Browser kholo → `github.com/Dev-Shivam-05/bca-sem5-practicals`
+1. Browser kholo → `github.com/Dev-Shivam-05/Bsc-Practical`
 2. Green button **Code** → **Download ZIP**.
 3. Downloads folder me ZIP par right-click → **Extract All** → Extract. (Linux: `unzip bca-sem5-practicals-*.zip`)
-4. Extracted folder (`bca-sem5-practicals-main` jaisa naam) kholo → **START_HERE.html** double-click.
+4. Extracted folder (`Bsc-Practical-main` jaisa naam) kholo → **START_HERE.html** double-click.
 5. **ZIP download na ho** to: GitHub website par hi folder `code/<ID>/` kholo → file kholo → upar **Copy raw file** button (ya **Raw** → Ctrl+A, Ctrl+C).
 6. Agar repo **private** hai to GitHub par login karna padega (password + 2FA). Isliye public rakhna ya login details yaad rakhna zaroori hai.
 
