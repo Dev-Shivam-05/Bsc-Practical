@@ -1,0 +1,12 @@
+Q: Q1. What is the login process in UNIX? Explain its purpose.
+
+Login process in UNIX and its purpose
+
+When a UNIX system starts, init (or systemd) starts a getty process for each terminal.
+1. getty displays the "login:" prompt and reads the user name.
+2. getty runs the login program, which asks for the password.
+3. login checks the user name and password against /etc/passwd and /etc/shadow.
+4. If correct, login sets the user ID, group ID, home directory and environment (HOME, PATH, SHELL) and starts the user's shell (e.g. /bin/bash) in the home directory.
+5. The shell runs startup files (.profile, .bashrc) and shows the prompt ($).
+
+Purpose: to identify and authenticate the user, protect the system from unauthorised access, and give each user their own environment, files and permissions.

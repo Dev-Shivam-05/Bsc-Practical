@@ -1,4 +1,4 @@
-PASS [msedge] loads offline, all items listed | 66 / 66 questions
+PASS [msedge] loads offline, all items listed | 85 / 85 questions
 PASS [msedge] search 'factorial' -> UX-A2-05 in top results | ['UX-A2-05', 'UX-A2-15', 'UX-P2-12']
 PASS [msedge] search 'a2 5' -> UX-A2-05 in top results | ['UX-A2-05', 'ASP-A2-05', 'UX-A2-15']
 PASS [msedge] search 'q05' -> UX-A2-05 in top results | ['UX-A2-05', 'UX-P2-12']
@@ -14,21 +14,24 @@ PASS [msedge] search 'awk average' -> UX-A3-09 in top results | ['UX-A3-09']
 PASS [msedge] search 'ajax customer' -> WFS-04 in top results | ['WFS-04']
 PASS [msedge] search 'msil' -> ASP-B-04 in top results | ['ASP-B-04']
 PASS [msedge] search 'overloading' -> ASP-B-08 in top results | ['ASP-B-08']
-PASS [msedge] search 'chmod' -> UX-P1-07 in top results | ['UX-A2-14', 'UX-P1-07']
+PASS [msedge] search 'chmod' -> UX-P1-07 in top results | ['UX-A2-14', 'UX-P1-07', 'UX-T2-04']
 PASS [msedge] search 'comm' -> UX-P1-05 in top results | ['UX-P1-01', 'UX-P1-04', 'UX-P1-05']
 PASS [msedge] search 'environment variable' -> UX-P2-01 in top results | ['UX-P2-01']
 PASS [msedge] search 'palindrom' -> UX-A2-09 in top results | ['UX-A2-09']
 PASS [msedge] search 'asp 4' -> ASP-A2-04 in top results | ['ASP-B-04', 'ASP-A2-04']
+PASS [msedge] search 'inode' -> UX-T2-02 in top results | ['UX-T2-02', 'UX-T2-07']
+PASS [msedge] search 'kernel types' -> UX-T1-09 in top results | ['UX-T1-09']
+PASS [msedge] search 'booting init' -> UX-T2-09 in top results | ['UX-T2-09']
 PASS [msedge] search 'employee crud' finds ASP + PHP versions | ['ASP-A2-04', 'WFS-01']
 PASS [msedge] no-result message
-PASS [msedge] embedded code identical to package files (198 files)
+PASS [msedge] embedded code identical to package files (217 files)
 PASS [msedge] ASP-A2-04 shows all its files as tabs | ['Prog4.aspx', 'App_Code/Db.vb', 'HOW_TO_RUN.md', 'PracticalDB.sql', 'Prog4.aspx.vb', 'Web.config', 'site.css']
 PASS [msedge] tab switch shows Db.vb exactly
 PASS [msedge] Copy button copies exact code (CRLF-normalised: Windows clipboard adds CR) | Copied ✓
 PASS [msedge] keyboard ArrowDown opens 2nd result
 PASS [msedge] tested output shown for UNIX | 0 1 1 2 3 5 8
 PASS [msedge] no JS errors
-PASS [chrome] loads offline, all items listed | 66 / 66 questions
+PASS [chrome] loads offline, all items listed | 85 / 85 questions
 PASS [chrome] search 'factorial' -> UX-A2-05 in top results | ['UX-A2-05', 'UX-A2-15', 'UX-P2-12']
 PASS [chrome] search 'a2 5' -> UX-A2-05 in top results | ['UX-A2-05', 'ASP-A2-05', 'UX-A2-15']
 PASS [chrome] search 'q05' -> UX-A2-05 in top results | ['UX-A2-05', 'UX-P2-12']
@@ -44,11 +47,14 @@ PASS [chrome] search 'awk average' -> UX-A3-09 in top results | ['UX-A3-09']
 PASS [chrome] search 'ajax customer' -> WFS-04 in top results | ['WFS-04']
 PASS [chrome] search 'msil' -> ASP-B-04 in top results | ['ASP-B-04']
 PASS [chrome] search 'overloading' -> ASP-B-08 in top results | ['ASP-B-08']
-PASS [chrome] search 'chmod' -> UX-P1-07 in top results | ['UX-A2-14', 'UX-P1-07']
+PASS [chrome] search 'chmod' -> UX-P1-07 in top results | ['UX-A2-14', 'UX-P1-07', 'UX-T2-04']
 PASS [chrome] search 'comm' -> UX-P1-05 in top results | ['UX-P1-01', 'UX-P1-04', 'UX-P1-05']
 PASS [chrome] search 'environment variable' -> UX-P2-01 in top results | ['UX-P2-01']
 PASS [chrome] search 'palindrom' -> UX-A2-09 in top results | ['UX-A2-09']
 PASS [chrome] search 'asp 4' -> ASP-A2-04 in top results | ['ASP-B-04', 'ASP-A2-04']
+PASS [chrome] search 'inode' -> UX-T2-02 in top results | ['UX-T2-02', 'UX-T2-07']
+PASS [chrome] search 'kernel types' -> UX-T1-09 in top results | ['UX-T1-09']
+PASS [chrome] search 'booting init' -> UX-T2-09 in top results | ['UX-T2-09']
 PASS [chrome] search 'employee crud' finds ASP + PHP versions | ['ASP-A2-04', 'WFS-01']
 PASS [chrome] no-result message
 PASS [chrome] ASP-A2-04 shows all its files as tabs | ['Prog4.aspx', 'App_Code/Db.vb', 'HOW_TO_RUN.md', 'PracticalDB.sql', 'Prog4.aspx.vb', 'Web.config', 'site.css']
@@ -63,4 +69,4 @@ PASS [msedge] JS disabled -> noscript fallback message visible
 PASS [msedge] no horizontal page scroll at 390px | 390
 PASS no network requests attempted (other than file://)
 
-TOTAL 64 / 64
+TOTAL 70 / 70

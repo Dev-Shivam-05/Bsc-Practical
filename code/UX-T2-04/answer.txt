@@ -1,0 +1,15 @@
+Q: Q4. What are file access permissions? Name the three basic permission types.
+
+File access permissions
+
+File permissions decide who can do what with a file or directory. UNIX defines permissions for three classes of users:
+- Owner (u) - the user who owns the file
+- Group (g) - users in the file's group
+- Others (o) - all other users
+
+Three basic permission types:
+1. Read (r = 4) - file: view contents; directory: list its files.
+2. Write (w = 2) - file: change contents; directory: create/delete files in it.
+3. Execute (x = 1) - file: run it as a program; directory: enter it with cd.
+
+Example: ls -l shows  -rwxr-xr--  meaning owner rwx, group r-x, others r--.

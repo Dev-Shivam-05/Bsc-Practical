@@ -1,0 +1,16 @@
+Q: Q2. Define an I-node. What information does it store?
+
+I-node (index node) and the information it stores
+
+An inode is a data structure on disk that stores all information about a file except its name and its data. Every file has a unique inode number within a file system. The directory entry links the file name to the inode number.
+
+Information stored in an inode:
+1. File type (regular file, directory, link, device)
+2. File permissions (rwx for owner, group, others)
+3. Owner user ID (UID) and group ID (GID)
+4. File size in bytes
+5. Number of hard links
+6. Time stamps: last access (atime), last modification (mtime), last inode change (ctime)
+7. Addresses of the disk blocks holding the data (direct, single, double and triple indirect pointers)
+
+Command to see inode numbers: ls -i ;  details: stat filename

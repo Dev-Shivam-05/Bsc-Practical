@@ -1,0 +1,21 @@
+Q: Q3. Explain the Computer System Components.
+
+Computer System Components
+
+A computer system has four main components:
+
+1. Hardware - the physical parts: CPU (ALU + Control Unit + registers), memory (RAM/ROM), storage devices (HDD/SSD), and input/output devices (keyboard, mouse, monitor, printer).
+2. Operating System - controls the hardware and coordinates its use among application programs and users.
+3. Application programs - software that solves user problems, e.g. word processors, compilers, web browsers, database systems.
+4. Users - people, machines or other computers that use the system.
+
+Layered view (diagram):
+        Users
+          |
+  Application Programs
+          |
+   Operating System
+          |
+       Hardware
+
+The OS sits between the hardware and the applications/users.

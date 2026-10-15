@@ -1,0 +1,30 @@
+Q: B2. Define an I-node. Explain its functions and the information stored in it.
+
+I-node: definition, functions and information stored
+
+Definition: an inode (index node) is a fixed-size structure in the file system that describes one file. It holds the file's metadata and the location of its data blocks, but not its name. Directory entries map names to inode numbers.
+
+Information stored:
+1. File type and permission bits (mode)
+2. Owner UID and group GID
+3. File size
+4. Link count (number of hard links)
+5. Time stamps: atime (last access), mtime (last data modification), ctime (last inode change)
+6. Data block pointers: 12 direct pointers + single, double and triple indirect pointers (classic UNIX design)
+
+Functions / uses:
+1. Locating data - the kernel uses the block pointers to read and write the file's data.
+2. Access control - permission bits and owner decide who can read/write/execute.
+3. Hard links - many names (directory entries) can point to the same inode; the file is deleted only when the link count becomes 0.
+4. Fast metadata operations - ls -l, stat, find read the inode without reading the data.
+5. Rename/move within the same file system only changes the directory entry, not the inode or data.
+
+Diagram:
+  Directory entry            Inode 1234                 Data blocks
+  +----------------+     +------------------+       +-----------+
+  | "notes.txt" 1234 |-->| type, perms, uid |  ---> | block 501 |
+  +----------------+     | size, links, times|  ---> | block 502 |
+                         | block pointers   |       +-----------+
+                         +------------------+
+
+Commands:  ls -i file  (inode number);  stat file  (all inode details);  df -i  (inode usage).

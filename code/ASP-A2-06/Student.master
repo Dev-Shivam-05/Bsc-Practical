@@ -4,9 +4,13 @@
 <link href="site.css" rel="stylesheet" /></head><body>
 <form id="form1" runat="server">
 <header class="portal-head"><h1>College Portal</h1></header>
-<nav><a href="Prog6.aspx">Home</a>
-     <a href="Prog6.aspx">Students</a>
-     <a href="Prog6.aspx">Contact</a></nav>
+<nav><asp:Menu ID="mainMenu" runat="server" Orientation="Horizontal">
+    <Items>
+        <asp:MenuItem Text="Home" NavigateUrl="~/Prog6.aspx" />
+        <asp:MenuItem Text="Students" NavigateUrl="~/Prog6.aspx" />
+        <asp:MenuItem Text="Contact" NavigateUrl="~/Prog6.aspx" />
+    </Items>
+</asp:Menu></nav>
 <div class="wrapper">
 <asp:ContentPlaceHolder ID="MainContent" runat="server" />
 </div><footer>Vidhyadeep University · 2026</footer>

@@ -1,0 +1,19 @@
+Q: B4. Explain the stages of the UNIX booting process and the role of the init process.
+
+Stages of the UNIX booting process and the role of init
+
+1. BIOS / UEFI (firmware)
+   - Power-on self test (POST) checks hardware.
+   - Finds the boot device and loads the boot loader from the boot sector (MBR) or EFI partition.
+2. Boot loader (e.g. GRUB / LILO)
+   - Shows boot menu, loads the kernel image (/boot/vmlinuz) and initial RAM disk (initrd) into memory and passes control to the kernel.
+3. Kernel initialisation
+   - Detects and initialises CPU, memory and devices, loads drivers, mounts the root file system (/) read-only, then starts the first process: /sbin/init (PID 1).
+4. init (or systemd)
+   - Reads /etc/inittab (System V) or its units (systemd).
+   - Decides run level / target: 0 halt, 1 single-user, 3 multi-user text, 5 graphical, 6 reboot.
+   - Runs start-up scripts (/etc/rc.d, /etc/init.d) to check and mount file systems, start networking and daemons (cron, sshd, printing).
+5. getty and login
+   - init starts getty on each terminal, which shows the login: prompt; after login the user's shell starts.
+
+Role of init: it is the first process (PID 1) and parent of all processes; it brings the system to the required run level, starts and supervises services, starts login terminals, adopts orphan processes and handles orderly shutdown/reboot.

@@ -1,0 +1,28 @@
+Q: B3. Explain the UNIX file system hierarchy and describe the purpose of important directories.
+
+UNIX file system hierarchy and important directories
+
+UNIX uses a single inverted-tree hierarchy starting at root (/). All files, devices and mounted disks appear under it.
+
+                    /
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+ bin  sbin  etc  home  dev  lib  tmp  usr  var  boot ...
+
+Important directories:
+- /       Root of the whole file system.
+- /bin    Essential user commands (ls, cp, mv, cat, bash).
+- /sbin   System administration commands (shutdown, fdisk, ifconfig).
+- /etc    System configuration files (passwd, shadow, hosts, fstab).
+- /home   Home directories of users (/home/shivam).
+- /root   Home directory of the superuser.
+- /dev    Device files (/dev/sda disk, /dev/tty terminals, /dev/null).
+- /lib    Shared libraries needed by /bin and /sbin programs, kernel modules.
+- /usr    User programs and data: /usr/bin, /usr/lib, /usr/share, /usr/local.
+- /var    Variable data: logs (/var/log), mail, spool, caches.
+- /tmp    Temporary files; often cleared at reboot.
+- /boot   Boot loader files and the kernel image.
+- /opt    Optional add-on application software.
+- /mnt, /media  Mount points for temporary file systems, USB drives, CD-ROMs.
+- /proc   Virtual file system with process and kernel information.
+
+Paths: absolute path starts from / (e.g. /home/shivam/a.txt); relative path starts from the current directory (e.g. docs/a.txt).

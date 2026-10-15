@@ -1,0 +1,12 @@
+Q: Q2. Explain the Types of Operating Systems.
+
+Types of Operating Systems
+
+1. Batch OS - similar jobs are collected into batches and run one after another without user interaction. Example: early IBM mainframe systems.
+2. Multiprogramming OS - several programs are kept in memory; when one waits for I/O the CPU runs another, so CPU is never idle.
+3. Time-sharing (Multitasking) OS - CPU time is divided into small time slices given to each user/process in turn, so many users feel they have the computer to themselves. Example: UNIX.
+4. Multiprocessing OS - uses two or more CPUs that share memory to run processes in parallel. Example: Linux on multi-core systems.
+5. Distributed OS - many independent computers connected by a network work together and appear as one system.
+6. Network OS - runs on a server and provides file sharing, printers, users and security over a network. Example: Windows Server, Novell NetWare.
+7. Real-Time OS (RTOS) - gives a response within a fixed time limit. Hard real-time (missile, pacemaker) and soft real-time (video streaming). Example: VxWorks, FreeRTOS.
+8. Mobile / Embedded OS - designed for phones and devices with limited resources. Example: Android, iOS.

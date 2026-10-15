@@ -108,7 +108,7 @@ Partial Class Prog7
         hfKey.Value = key.ToString()
         txtMedicineName.Text = row("MedicineName").ToString()
         txtCategory.Text = row("Category").ToString()
-        txtPrice.Text = row("Price").ToString()
+        txtPrice.Text = Convert.ToDecimal(row("Price")).ToString(CultureInfo.InvariantCulture)
         txtQuantity.Text = row("Quantity").ToString()
         txtExpiryDate.Text = CDate(row("ExpiryDate")).ToString("yyyy-MM-dd")
     End Sub

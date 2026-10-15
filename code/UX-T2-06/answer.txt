@@ -1,0 +1,31 @@
+Q: B1. Explain the UNIX login process and logout process with suitable examples.
+
+UNIX login and logout process (with examples)
+
+LOGIN
+1. At boot, init/systemd starts a getty process on each terminal.
+2. getty shows:   login:
+3. User types the user name, e.g.  login: shivam
+4. getty starts the login program, which asks:   Password:
+5. login checks the entry in /etc/passwd (user name, UID, GID, home directory, shell) and the encrypted password in /etc/shadow.
+6. On success it changes to the user's home directory (e.g. /home/shivam), sets environment variables (HOME, USER, PATH, SHELL) and starts the login shell (/bin/bash).
+7. The shell reads /etc/profile and ~/.profile or ~/.bash_profile, then shows the prompt:
+      shivam@lab:~$
+8. On failure: "Login incorrect" is shown and login is asked again.
+
+Example session:
+   login: shivam
+   Password: ********
+   Last login: Thu Oct 15 10:00 on tty1
+   shivam@lab:~$ whoami
+   shivam
+
+LOGOUT
+1. The user types  logout  or  exit  or presses Ctrl+D.
+2. The shell runs ~/.bash_logout (if present), terminates the user's processes and exits.
+3. init/systemd notices the session ended and starts a new getty, so the  login:  prompt appears again.
+
+Example:
+   shivam@lab:~$ exit
+   logout
+   login:

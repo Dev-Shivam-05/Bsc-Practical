@@ -11,6 +11,8 @@
 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtRoll"
     ErrorMessage="Roll no. required" CssClass="error" />
 <label>Age</label><asp:TextBox ID="txtAge" runat="server" />
+<asp:RequiredFieldValidator runat="server" ControlToValidate="txtAge"
+    ErrorMessage="Age required" CssClass="error" Display="Dynamic" />
 <asp:RangeValidator runat="server" ControlToValidate="txtAge"
     MinimumValue="1" MaximumValue="120" Type="Integer"
     ErrorMessage="Enter age 1-120" CssClass="error" />

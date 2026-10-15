@@ -103,7 +103,7 @@ Partial Class Prog4
         hfKey.Value = key.ToString()
         txtEmployeeName.Text = row("EmployeeName").ToString()
         txtDepartment.Text = row("Department").ToString()
-        txtSalary.Text = row("Salary").ToString()
+        txtSalary.Text = Convert.ToDecimal(row("Salary")).ToString(CultureInfo.InvariantCulture)
         txtContactNo.Text = row("ContactNo").ToString()
     End Sub
 End Class

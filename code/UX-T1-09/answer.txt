@@ -1,0 +1,19 @@
+Q: Q9. Explain the different Types of Kernel with suitable examples.
+
+Types of Kernel (with examples)
+
+1. Monolithic kernel - the whole OS (file system, process management, memory, drivers) runs as one large program in kernel space. Fast because there is no message passing, but a bug in one part can crash the system.
+   Examples: traditional UNIX, Linux, MS-DOS.
+
+2. Microkernel - only the minimum (IPC, basic scheduling, low-level memory) runs in kernel space; file systems, drivers and services run as separate user-space servers. More reliable and secure, but slower due to message passing.
+   Examples: Mach, MINIX 3, QNX, L4.
+
+3. Hybrid kernel - mixes both: a microkernel-like design but with some services in kernel space for speed.
+   Examples: Windows NT/10/11, macOS XNU.
+
+4. Exokernel - very small kernel that only protects and allocates hardware; applications manage resources themselves through library OSes.
+   Example: MIT Exokernel (research).
+
+5. Nanokernel - extremely small kernel handling only interrupts and timing; used in embedded systems.
+
+Comparison: monolithic = fast, less modular; microkernel = modular, stable, slower; hybrid = balance.

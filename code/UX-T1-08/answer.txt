@@ -1,0 +1,35 @@
+Q: Q8. Explain the Kernel Architecture with a neat diagram.
+
+Kernel Architecture of UNIX (with diagram)
+
+The kernel is the core of UNIX. It is loaded into memory at boot and stays there. It directly controls the hardware and provides services to programs through system calls.
+
+Diagram (layers):
+  +-----------------------------------------------+
+  |        Users / Application programs           |
+  |   (shell, editors, compilers, a.out ...)      |
+  +-----------------------------------------------+
+  |        Libraries (libc)                       |
+  +=========== System Call Interface =============+
+  |                 KERNEL                        |
+  |  +-------------------+  +-------------------+ |
+  |  | File Subsystem    |  | Process Control   | |
+  |  |  - buffer cache   |  |   Subsystem       | |
+  |  |  - inode, files   |  |  - scheduler      | |
+  |  +-------------------+  |  - memory mgmt    | |
+  |  | Device drivers    |  |  - IPC            | |
+  |  | (char / block)    |  +-------------------+ |
+  |  +-------------------+                        |
+  |        Hardware Control                       |
+  +-----------------------------------------------+
+  |                 HARDWARE                      |
+  +-----------------------------------------------+
+
+Parts:
+1. System call interface - the only entry into the kernel (open, read, write, fork, exec, exit).
+2. File subsystem - manages files, directories, inodes, free space and the buffer cache; talks to block/character device drivers.
+3. Process control subsystem - process creation (fork), scheduling, memory management (swapping/paging) and inter-process communication (pipes, signals, messages).
+4. Device drivers - control disks, terminals, printers.
+5. Hardware control - handles interrupts and talks to the machine.
+
+User programs run in user mode; the kernel runs in kernel (privileged) mode.

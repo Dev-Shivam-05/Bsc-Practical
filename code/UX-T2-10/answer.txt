@@ -1,0 +1,33 @@
+Q: B5. Explain UNIX file permissions using symbolic and numeric methods with examples.
+
+UNIX file permissions: symbolic and numeric methods (with examples)
+
+ls -l output:   -rwxr-x---  1 shivam staff 120 Oct 15 a.sh
+ - first character: file type (- file, d directory, l link)
+ - next 9 characters: owner (rwx), group (r-x), others (---)
+
+Permission values: r = 4, w = 2, x = 1, - = 0
+
+1) Symbolic method   chmod [who][operator][permissions] file
+   who: u (owner), g (group), o (others), a (all)
+   operator: + add, - remove, = set exactly
+   Examples:
+     chmod u+x a.sh          # give owner execute
+     chmod g-w notes.txt     # remove write from group
+     chmod o=r notes.txt     # others get read only
+     chmod a+r notes.txt     # everyone can read
+     chmod u=rwx,g=rx,o= a.sh
+
+2) Numeric (octal) method   chmod NNN file
+   Each digit = sum of r(4) + w(2) + x(1), in order owner, group, others.
+   Examples:
+     chmod 755 a.sh     # rwx r-x r-x  (7=4+2+1, 5=4+1)
+     chmod 644 a.txt    # rw- r-- r--
+     chmod 700 secret   # rwx --- ---
+     chmod 777 file     # rwx rwx rwx (everyone full access, not safe)
+
+Related commands:
+     ls -l file            # display permissions
+     chown user file       # change owner
+     chgrp group file      # change group
+     umask 022             # default permissions for new files (666-022 = 644)

@@ -1,4 +1,4 @@
-QUESTION INDEX - v1.0 (2026-10-15)
+QUESTION INDEX - v1.2 (2026-10-15)
 Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
 ==============================================================================
 
@@ -847,3 +847,163 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     3. Browser: http://localhost/phpmyadmin -> koi database select MAT karo -> Import tab -> schema.sql choose -> Import (Go). Database 'mobile_db' khud ban jayega.
     4. Browser: http://localhost/WFS-05/index.php
     5. db.php default: host 127.0.0.1, user root, password khali ('') = XAMPP default. MySQL password ho to db.php line 9 me password daalo.
+
+##############################################################################
+# UNIX Assignment 1 - Theory
+##############################################################################
+
+[UX-T1-01]  (ANSWERED)  What is an Operating System?
+  Q: Q1. What is an Operating System?
+  Folder: code/UX-T1-01/
+  Files: answer.txt
+  Keywords: theory answer explain define q1. what is an operating system?
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T1-02]  (ANSWERED)  Explain the Types of Operating Systems.
+  Q: Q2. Explain the Types of Operating Systems.
+  Folder: code/UX-T1-02/
+  Files: answer.txt
+  Keywords: theory answer explain define q2. explain the types of operating systems.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T1-03]  (ANSWERED)  Explain the Computer System Components.
+  Q: Q3. Explain the Computer System Components.
+  Folder: code/UX-T1-03/
+  Files: answer.txt
+  Keywords: theory answer explain define q3. explain the computer system components.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T1-04]  (ANSWERED)  List the Common Operating Systems.
+  Q: Q4. List the Common Operating Systems.
+  Folder: code/UX-T1-04/
+  Files: answer.txt
+  Keywords: theory answer explain define q4. list the common operating systems.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T1-05]  (ANSWERED)  Explain the History of UNIX.
+  Q: Q5. Explain the History of UNIX.
+  Folder: code/UX-T1-05/
+  Files: answer.txt
+  Keywords: theory answer explain define q5. explain the history of unix.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T1-06]  (ANSWERED)  Explain the key features of the UNIX Operating System.
+  Q: Q6. Explain the key features of the UNIX Operating System.
+  Folder: code/UX-T1-06/
+  Files: answer.txt
+  Keywords: theory answer explain define q6. explain the key features of the unix operating system.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T1-07]  (ANSWERED)  Explain the type of the Shell with a suitable example.
+  Q: Q7. Explain the type of the Shell with a suitable example.
+  Folder: code/UX-T1-07/
+  Files: answer.txt
+  Keywords: theory answer explain define q7. explain the type of the shell with a suitable example.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T1-08]  (ANSWERED)  Explain the Kernel Architecture with a neat diagram.
+  Q: Q8. Explain the Kernel Architecture with a neat diagram.
+  Folder: code/UX-T1-08/
+  Files: answer.txt
+  Keywords: theory answer explain define q8. explain the kernel architecture with a neat diagram.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T1-09]  (ANSWERED)  Explain the different Types of Kernel with suitable examples.
+  Q: Q9. Explain the different Types of Kernel with suitable examples.
+  Folder: code/UX-T1-09/
+  Files: answer.txt
+  Keywords: theory answer explain define q9. explain the different types of kernel with suitable examples.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+##############################################################################
+# UNIX Assignment 2 - Theory
+##############################################################################
+
+[UX-T2-01]  (ANSWERED)  What is the login process in UNIX? Explain its purpose.
+  Q: Q1. What is the login process in UNIX? Explain its purpose.
+  Folder: code/UX-T2-01/
+  Files: answer.txt
+  Keywords: theory answer explain define q1. what is the login process in unix? explain its purpose.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T2-02]  (ANSWERED)  Define an I-node. What information does it store?
+  Q: Q2. Define an I-node. What information does it store?
+  Folder: code/UX-T2-02/
+  Files: answer.txt
+  Keywords: theory answer explain define q2. define an i-node. what information does it store? inode index node
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T2-03]  (ANSWERED)  Explain the purpose of the init process in UNIX.
+  Q: Q3. Explain the purpose of the init process in UNIX.
+  Folder: code/UX-T2-03/
+  Files: answer.txt
+  Keywords: theory answer explain define q3. explain the purpose of the init process in unix.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T2-04]  (ANSWERED)  What are file access permissions? Name the three basic permission types.
+  Q: Q4. What are file access permissions? Name the three basic permission types.
+  Folder: code/UX-T2-04/
+  Files: answer.txt
+  Keywords: theory answer explain define q4. what are file access permissions? name the three basic permission types.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T2-05]  (ANSWERED)  Differentiate between logging out and shutting down a UNIX system.
+  Q: Q5. Differentiate between logging out and shutting down a UNIX system.
+  Folder: code/UX-T2-05/
+  Files: answer.txt
+  Keywords: theory answer explain define q5. differentiate between logging out and shutting down a unix system.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T2-06]  (ANSWERED)  Explain the UNIX login process and logout process with suitable examples.
+  Q: B1. Explain the UNIX login process and logout process with suitable examples.
+  Folder: code/UX-T2-06/
+  Files: answer.txt
+  Keywords: theory answer explain define b1. explain the unix login process and logout process with suitable examples.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T2-07]  (ANSWERED)  Define an I-node. Explain its functions and the information stored in it.
+  Q: B2. Define an I-node. Explain its functions and the information stored in it.
+  Folder: code/UX-T2-07/
+  Files: answer.txt
+  Keywords: theory answer explain define b2. define an i-node. explain its functions and the information stored in it. inode index node
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T2-08]  (ANSWERED)  Explain the UNIX file system hierarchy and describe the purpose of important directories.
+  Q: B3. Explain the UNIX file system hierarchy and describe the purpose of important directories.
+  Folder: code/UX-T2-08/
+  Files: answer.txt
+  Keywords: theory answer explain define b3. explain the unix file system hierarchy and describe the purpose of important directories.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T2-09]  (ANSWERED)  Explain the stages of the UNIX booting process and the role of the init process.
+  Q: B4. Explain the stages of the UNIX booting process and the role of the init process.
+  Folder: code/UX-T2-09/
+  Files: answer.txt
+  Keywords: theory answer explain define b4. explain the stages of the unix booting process and the role of the init process.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.
+
+[UX-T2-10]  (ANSWERED)  Explain UNIX file permissions using symbolic and numeric methods with examples.
+  Q: B5. Explain UNIX file permissions using symbolic and numeric methods with examples.
+  Folder: code/UX-T2-10/
+  Files: answer.txt
+  Keywords: theory answer explain define b5. explain unix file permissions using symbolic and numeric methods with examples.
+  Run:
+    1. Ye theory question hai - koi program run nahi karna. Answer padho aur apne words me likho; diagram ho to banao.

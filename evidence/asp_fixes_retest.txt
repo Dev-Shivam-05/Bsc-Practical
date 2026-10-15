@@ -1,0 +1,17 @@
+PASS B05 aspnet_compiler Microsoft (R) ASP.NET Compilation Tool version 4.8.10001.0
+Utility to precompile an ASP.NET application
+Copyright (C) Microsoft Corporation. All rights reserved.
+PASS B10 aspnet_compiler Microsoft (R) ASP.NET Compilation Tool version 4.8.10001.0
+Utility to precompile an ASP.NET application
+Copyright (C) Microsoft Corporation. All rights reserved.
+PASS A206 aspnet_compiler Microsoft (R) ASP.NET Compilation Tool version 4.8.10001.0
+Utility to precompile an ASP.NET application
+Copyright (C) Microsoft Corporation. All rights reserved.
+PASS B05 shows CLR version ['Running on CLR version 4.0.30319.42000 | Memory used by CLR heap: 6951 KB']
+PASS B05 12 -> Square = 144 + finally 
+PASS B05 abc -> FormatException 
+PASS B05 overflow 
+PASS B10 blank age rejected 
+PASS B10 valid input accepted 
+PASS A206 asp:Menu rendered with 3 items + GridView data 
+TOTAL 10 / 10

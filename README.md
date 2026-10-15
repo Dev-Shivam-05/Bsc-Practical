@@ -1,4 +1,4 @@
-# BCA / BSc.IT Sem-5 Practical Exam Companion (v1.0)
+# BCA / BSc.IT Sem-5 Practical Exam Companion (v1.2)
 
 ## ⬇ [ONE-CLICK DOWNLOAD (ZIP)](https://github.com/Dev-Shivam-05/Bsc-Practical/archive/refs/heads/main.zip)
 
@@ -22,6 +22,6 @@ ZIP na chale to: neeche table se folder kholo → file → **Copy raw file** but
 | Printed record PDFs | [`original_pdfs/`](original_pdfs/) |
 | Test results | [`TEST_REPORT.md`](TEST_REPORT.md), [`VERIFICATION_REPORT.csv`](VERIFICATION_REPORT.csv), [`KNOWN_ISSUES.md`](KNOWN_ISSUES.md) |
 
-**ID guide:** `UX-A2-xx` shell programs (q01–q15) · `UX-A3-xx` file utilities (c01–c10) · `UX-P1-xx` / `UX-P2-xx` official UNIX practical sheets · `ASP-B-xx` ASP.NET basics · `ASP-A2-xx` ASP.NET Assignment 2 · `WFS-xx` PHP + MySQL.
+**ID guide:** `UX-A2-xx` shell programs (q01–q15) · `UX-A3-xx` file utilities (c01–c10) · `UX-P1-xx` / `UX-P2-xx` official UNIX practical sheets · `ASP-B-xx` ASP.NET basics · `ASP-A2-xx` ASP.NET Assignment 2 · `WFS-xx` PHP + MySQL · `UX-T1/T2-xx` UNIX theory answers.
 
 **Yaad rakho:** shell script `bash file.sh` se chalao (`sh` se nahi). Linux par `$'\r'` error aaye to `sed -i 's/\r$//' file.sh`.

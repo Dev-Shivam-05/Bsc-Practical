@@ -1,0 +1,15 @@
+Q: Q5. Differentiate between logging out and shutting down a UNIX system.
+
+Logging out vs shutting down a UNIX system
+
+Logging out:
+- Ends only the current user's session (their shell and processes).
+- Command: logout, exit, or Ctrl+D.
+- The system keeps running; other users stay logged in; a new login prompt appears.
+- Any user can log out.
+
+Shutting down:
+- Stops the whole system: all users are logged out, all processes and services are stopped, file systems are unmounted, then power is turned off (or the machine reboots).
+- Commands: shutdown -h now, halt, poweroff, shutdown -r now / reboot.
+- Normally only the superuser (root) can shut down.
+- Proper shutdown is needed to avoid data loss and file-system damage.

@@ -1,4 +1,4 @@
-PRACTICAL EXAM COMPANION  -  v1.0 (2026-10-15)
+PRACTICAL EXAM COMPANION  -  v1.2 (2026-10-15)
 ================================================
 
 SABSE PEHLE YE KHOLO:   START_HERE.html   (double-click -> browser me khulega, internet ki zarurat nahi)
@@ -16,6 +16,7 @@ ID ka matlab:
   ASP-B-xx  = ASP.NET basic practicals (simple page, code-behind, OOP...)
   ASP-A2-xx = ASP.NET Assignment 2 (GridView, validators, master page, CRUD, cookie, session)
   WFS-xx    = WFS PHP + MySQL (+AJAX) projects
+  UX-T1-xx / UX-T2-xx = UNIX theory answers (Assignment 1 / 2)
 
 Poori exam-day guide:  RUN_GUIDE.md   (Notepad me bhi padh sakte ho)
 Kya test hua, kya nahi:  TEST_REPORT.md, VERIFICATION_REPORT.csv, KNOWN_ISSUES.md

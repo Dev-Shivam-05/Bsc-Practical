@@ -1,0 +1,19 @@
+Q: Q7. Explain the type of the Shell with a suitable example.
+
+Types of Shell (with example)
+
+A shell is the command interpreter: it reads commands typed by the user and asks the kernel to execute them. It is also a programming language for writing shell scripts.
+
+1. Bourne Shell (sh) - written by Stephen Bourne at Bell Labs; the original standard shell. Prompt: $. Path: /bin/sh.
+2. C Shell (csh) - written by Bill Joy (BSD); syntax similar to C language; added history and aliases. Prompt: %.
+3. Korn Shell (ksh) - written by David Korn (AT&T); compatible with Bourne shell plus C-shell features (history, aliases, arithmetic).
+4. Bourne Again Shell (bash) - GNU project; default shell on most Linux systems. Combines sh, csh and ksh features: command history, tab completion, arrays. Path: /bin/bash.
+5. TC Shell (tcsh) - improved C shell with command-line editing.
+6. Z Shell (zsh) - extended shell with plugins and themes; default on new macOS.
+
+Example:
+  echo $SHELL            # shows current shell, e.g. /bin/bash
+  cat /etc/shells        # lists installed shells
+  bash                   # start a bash shell
+  #!/bin/bash            # first line of a script selects the shell
+  echo "Hello from bash"

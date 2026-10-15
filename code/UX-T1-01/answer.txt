@@ -1,0 +1,15 @@
+Q: Q1. What is an Operating System?
+
+What is an Operating System?
+
+An Operating System (OS) is system software that acts as an interface between the user/application programs and the computer hardware. It manages hardware resources and provides common services to programs.
+
+Main functions:
+1. Process management - creates, schedules and terminates processes (programs in execution).
+2. Memory management - allocates and frees main memory for processes.
+3. File management - creates, deletes, organises and protects files and directories.
+4. Device (I/O) management - controls devices through device drivers.
+5. Security and protection - user login, passwords, file permissions.
+6. User interface - command line (shell) or graphical interface (GUI).
+
+Examples: UNIX, Linux, Windows, macOS, Android.

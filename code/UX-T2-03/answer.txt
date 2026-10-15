@@ -1,0 +1,12 @@
+Q: Q3. Explain the purpose of the init process in UNIX.
+
+Purpose of the init process in UNIX
+
+- init is the first user-level process started by the kernel at boot. Its process ID (PID) is 1.
+- It is the parent (ancestor) of all other processes.
+- It reads its configuration (/etc/inittab in System V, or unit files in systemd) and decides the run level / target.
+- It starts system services (daemons) and the getty processes that show the login prompt on terminals.
+- It adopts orphan processes (whose parent has died) and collects their exit status, removing zombie processes.
+- During shutdown or reboot it stops services and processes in an orderly way.
+
+On modern Linux, init is usually systemd (still PID 1).

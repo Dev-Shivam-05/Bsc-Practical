@@ -1,4 +1,4 @@
-ALL CODE - v1.0 (2026-10-15)
+ALL CODE - v1.2 (2026-10-15)
 Search with Ctrl+F by ID (e.g. UX-A2-05) or keyword.
 
 ==============================================================================
@@ -725,9 +725,9 @@ rmdir foldername && echo "foldername removed"
 
 ----- TESTED OUTPUT -----
 --- pwd ---
-/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpjmko_adf
+/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmp41rarxlq
 --- date ---
-Thu Oct 15 06:07:16 PM UTC 2026
+Thu Oct 15 06:19:42 PM UTC 2026
 --- whoami ---
 Dev-Shivam-05
 --- tty ---
@@ -742,7 +742,7 @@ basic_commands.sh
 ..
 basic_commands.sh
 --- ls -i ---
-5348024558988316 basic_commands.sh
+5629499535700067 basic_commands.sh
 --- cat filename.txt ---
 Hello UNIX
 This is my first file
@@ -775,11 +775,11 @@ ls
 
 ----- TESTED OUTPUT -----
 Now inside:
-/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpfv5c7n92/UNIX_LAB/Programs
+/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmp1cvdop8u/UNIX_LAB/Programs
 total 0
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 30 Oct 15 18:07 hello.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 30 Oct 15 18:19 hello.txt
 Back in:
-/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpfv5c7n92/UNIX_LAB
+/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmp1cvdop8u/UNIX_LAB
 Empty directory Data removed
 Programs
 
@@ -816,11 +816,11 @@ lab
 programm
 --- ls -l ---
 total 0
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 18:07 a_copy.txt
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 18:07 a.txt
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05   0 Oct 15 18:07 b.txt
-drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 18:07 lab
-drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 18:07 programm
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 18:19 a_copy.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 18:19 a.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05   0 Oct 15 18:19 b.txt
+drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 18:19 lab
+drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 18:19 programm
 --- ls -a ---
 .
 ..
@@ -1047,15 +1047,15 @@ echo "Read: r=4, w=2, x=1. 755 = rwx r-x r-x (owner, group, others). 644 = rw- r
 
 ----- TESTED OUTPUT -----
 --- default ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:07 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:19 perm.txt
 --- chmod u+x (symbolic) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:07 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:19 perm.txt
 --- chmod go-r (symbolic) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:07 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:19 perm.txt
 --- chmod 755 (numeric) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:07 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:19 perm.txt
 --- chmod 644 (numeric) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:07 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 18:19 perm.txt
 Read: r=4, w=2, x=1. 755 = rwx r-x r-x (owner, group, others). 644 = rw- r-- r--
 
 ==============================================================================
@@ -1087,11 +1087,11 @@ WSL2_GUI_APPS_ENABLED=1
 WSL_DISTRO_NAME=Debian
 NAME=Lappy
 PERF_EXEC_PATH=/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/libexec/perf-core
-PWD=/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpkt1s56bn
+PWD=/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpvppei_t9
 LOGNAME=Dev-Shivam-05
 HOME=/home/Dev-Shivam-05
 LANG=en_US.UTF-8
-WSL_INTEROP=/run/WSL/549_interop
+WSL_INTEROP=/run/WSL/533_interop
 myname = Shivam
 after unset: myname = ''
 
@@ -1112,7 +1112,7 @@ echo "Date and Time     : $(date)"
 Name              : SHIVAM BHADORIYA
 Enrollment Number : 240606302109
 Course            : TY B.Sc. IT (Semester V)
-Date and Time     : Thu Oct 15 06:07:21 PM UTC 2026
+Date and Time     : Thu Oct 15 06:19:47 PM UTC 2026
 
 ==============================================================================
 UX-P2-03  Arithmetic operations (same as UX-A2-01)
@@ -1478,27 +1478,39 @@ Q: Demonstrate CLR and Exception Handling
 ----- FILE: code/ASP-B-05/Default.aspx -----
 <%@ Page Language="VB" AutoEventWireup="true" CodeFile="Default.aspx.vb" Inherits="ExceptionDemo" %>
 <!DOCTYPE html>
-<html><head runat="server"><title>Exception Handling</title>
+<html><head runat="server"><title>CLR and Exception Handling</title>
 <link href="style.css" rel="stylesheet" />
 </head><body><form id="form1" runat="server">
-<main><h1>Exception Handling</h1>
+<main><h1>CLR and Exception Handling</h1>
+<asp:Label ID="lblClr" runat="server" CssClass="message" />
 <label>Enter an integer</label>
 <asp:TextBox ID="txtNumber" runat="server" />
 <asp:Button ID="btnShow" runat="server" Text="Process" OnClick="btnShow_Click" />
 <asp:Label ID="lblResult" runat="server" CssClass="message" />
+<asp:Label ID="lblFinally" runat="server" CssClass="message" />
 </main></form></body></html>
 
 ----- FILE: code/ASP-B-05/Default.aspx.vb -----
 Partial Class ExceptionDemo
     Inherits System.Web.UI.Page
+
+    ' The CLR (Common Language Runtime) runs this compiled code: it JIT-compiles the IL,
+    ' manages memory (garbage collection) and raises exceptions such as FormatException.
+    Protected Sub Page_Load(sender As Object, e As EventArgs)
+        lblClr.Text = "Running on CLR version " & Environment.Version.ToString() &
+            " | Memory used by CLR heap: " & (GC.GetTotalMemory(False) \ 1024).ToString() & " KB"
+    End Sub
+
     Protected Sub btnShow_Click(sender As Object, e As EventArgs)
         Try
             Dim n As Integer = Integer.Parse(txtNumber.Text)
             lblResult.Text = "Square = " & (CLng(n) * n).ToString()
         Catch ex As FormatException
-            lblResult.Text = "Please enter a valid integer."
+            lblResult.Text = "Please enter a valid integer. (CLR raised " & ex.GetType().Name & ")"
         Catch ex As OverflowException
-            lblResult.Text = "Number is outside the allowed range."
+            lblResult.Text = "Number is outside the allowed range. (CLR raised " & ex.GetType().Name & ")"
+        Finally
+            lblFinally.Text = "Finally block executed."
         End Try
     End Sub
 End Class
@@ -1733,6 +1745,8 @@ Q: Mini Practical: Student information form
 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtRoll"
     ErrorMessage="Roll no. required" CssClass="error" />
 <label>Age</label><asp:TextBox ID="txtAge" runat="server" />
+<asp:RequiredFieldValidator runat="server" ControlToValidate="txtAge"
+    ErrorMessage="Age required" CssClass="error" Display="Dynamic" />
 <asp:RangeValidator runat="server" ControlToValidate="txtAge"
     MinimumValue="1" MaximumValue="120" Type="Integer"
     ErrorMessage="Enter age 1-120" CssClass="error" />
@@ -2480,7 +2494,7 @@ Partial Class Prog4
         hfKey.Value = key.ToString()
         txtEmployeeName.Text = row("EmployeeName").ToString()
         txtDepartment.Text = row("Department").ToString()
-        txtSalary.Text = row("Salary").ToString()
+        txtSalary.Text = Convert.ToDecimal(row("Salary")).ToString(CultureInfo.InvariantCulture)
         txtContactNo.Text = row("ContactNo").ToString()
     End Sub
 End Class
@@ -3084,9 +3098,13 @@ End Class
 <link href="site.css" rel="stylesheet" /></head><body>
 <form id="form1" runat="server">
 <header class="portal-head"><h1>College Portal</h1></header>
-<nav><a href="Prog6.aspx">Home</a>
-     <a href="Prog6.aspx">Students</a>
-     <a href="Prog6.aspx">Contact</a></nav>
+<nav><asp:Menu ID="mainMenu" runat="server" Orientation="Horizontal">
+    <Items>
+        <asp:MenuItem Text="Home" NavigateUrl="~/Prog6.aspx" />
+        <asp:MenuItem Text="Students" NavigateUrl="~/Prog6.aspx" />
+        <asp:MenuItem Text="Contact" NavigateUrl="~/Prog6.aspx" />
+    </Items>
+</asp:Menu></nav>
 <div class="wrapper">
 <asp:ContentPlaceHolder ID="MainContent" runat="server" />
 </div><footer>Vidhyadeep University · 2026</footer>
@@ -3386,7 +3404,7 @@ Partial Class Prog7
         hfKey.Value = key.ToString()
         txtMedicineName.Text = row("MedicineName").ToString()
         txtCategory.Text = row("Category").ToString()
-        txtPrice.Text = row("Price").ToString()
+        txtPrice.Text = Convert.ToDecimal(row("Price")).ToString(CultureInfo.InvariantCulture)
         txtQuantity.Text = row("Quantity").ToString()
         txtExpiryDate.Text = CDate(row("ExpiryDate")).ToString("yyyy-MM-dd")
     End Sub
@@ -5806,4 +5824,510 @@ a { color:#0a6774; font-weight:600; }
 .search { max-width:450px; margin-bottom:16px; }
 small { color:#627785; }
 @media(max-width:680px){ .fields {grid-template-columns:1fr;} }
+
+==============================================================================
+UX-T1-01  What is an Operating System?
+Q: Q1. What is an Operating System?
+==============================================================================
+
+----- FILE: code/UX-T1-01/answer.txt -----
+Q: Q1. What is an Operating System?
+
+What is an Operating System?
+
+An Operating System (OS) is system software that acts as an interface between the user/application programs and the computer hardware. It manages hardware resources and provides common services to programs.
+
+Main functions:
+1. Process management - creates, schedules and terminates processes (programs in execution).
+2. Memory management - allocates and frees main memory for processes.
+3. File management - creates, deletes, organises and protects files and directories.
+4. Device (I/O) management - controls devices through device drivers.
+5. Security and protection - user login, passwords, file permissions.
+6. User interface - command line (shell) or graphical interface (GUI).
+
+Examples: UNIX, Linux, Windows, macOS, Android.
+
+==============================================================================
+UX-T1-02  Explain the Types of Operating Systems.
+Q: Q2. Explain the Types of Operating Systems.
+==============================================================================
+
+----- FILE: code/UX-T1-02/answer.txt -----
+Q: Q2. Explain the Types of Operating Systems.
+
+Types of Operating Systems
+
+1. Batch OS - similar jobs are collected into batches and run one after another without user interaction. Example: early IBM mainframe systems.
+2. Multiprogramming OS - several programs are kept in memory; when one waits for I/O the CPU runs another, so CPU is never idle.
+3. Time-sharing (Multitasking) OS - CPU time is divided into small time slices given to each user/process in turn, so many users feel they have the computer to themselves. Example: UNIX.
+4. Multiprocessing OS - uses two or more CPUs that share memory to run processes in parallel. Example: Linux on multi-core systems.
+5. Distributed OS - many independent computers connected by a network work together and appear as one system.
+6. Network OS - runs on a server and provides file sharing, printers, users and security over a network. Example: Windows Server, Novell NetWare.
+7. Real-Time OS (RTOS) - gives a response within a fixed time limit. Hard real-time (missile, pacemaker) and soft real-time (video streaming). Example: VxWorks, FreeRTOS.
+8. Mobile / Embedded OS - designed for phones and devices with limited resources. Example: Android, iOS.
+
+==============================================================================
+UX-T1-03  Explain the Computer System Components.
+Q: Q3. Explain the Computer System Components.
+==============================================================================
+
+----- FILE: code/UX-T1-03/answer.txt -----
+Q: Q3. Explain the Computer System Components.
+
+Computer System Components
+
+A computer system has four main components:
+
+1. Hardware - the physical parts: CPU (ALU + Control Unit + registers), memory (RAM/ROM), storage devices (HDD/SSD), and input/output devices (keyboard, mouse, monitor, printer).
+2. Operating System - controls the hardware and coordinates its use among application programs and users.
+3. Application programs - software that solves user problems, e.g. word processors, compilers, web browsers, database systems.
+4. Users - people, machines or other computers that use the system.
+
+Layered view (diagram):
+        Users
+          |
+  Application Programs
+          |
+   Operating System
+          |
+       Hardware
+
+The OS sits between the hardware and the applications/users.
+
+==============================================================================
+UX-T1-04  List the Common Operating Systems.
+Q: Q4. List the Common Operating Systems.
+==============================================================================
+
+----- FILE: code/UX-T1-04/answer.txt -----
+Q: Q4. List the Common Operating Systems.
+
+Common Operating Systems
+
+1. UNIX - multi-user, multitasking OS developed at AT&T Bell Labs (1969). Used on servers and workstations (Solaris, AIX, HP-UX).
+2. Linux - free, open-source UNIX-like OS (Linus Torvalds, 1991). Distributions: Ubuntu, Fedora, Debian, Red Hat.
+3. Microsoft Windows - GUI-based OS for PCs and servers (Windows 10, 11, Windows Server).
+4. macOS - Apple's UNIX-based OS for Mac computers.
+5. Android - Linux-kernel based mobile OS by Google.
+6. iOS - Apple's mobile OS for iPhone.
+7. Chrome OS - Google's Linux-based OS for Chromebooks.
+8. MS-DOS - early single-user, command-line OS by Microsoft.
+
+==============================================================================
+UX-T1-05  Explain the History of UNIX.
+Q: Q5. Explain the History of UNIX.
+==============================================================================
+
+----- FILE: code/UX-T1-05/answer.txt -----
+Q: Q5. Explain the History of UNIX.
+
+History of UNIX
+
+- 1965-1969: Bell Labs, MIT and General Electric worked on MULTICS. Bell Labs left the project.
+- 1969: Ken Thompson and Dennis Ritchie at AT&T Bell Labs wrote the first UNIX on a PDP-7 computer, in assembly language.
+- 1971: First edition of UNIX released on PDP-11.
+- 1973: UNIX was rewritten in the C language (created by Dennis Ritchie). This made UNIX portable to other machines.
+- Late 1970s: AT&T gave UNIX source code to universities. University of California, Berkeley developed BSD (Berkeley Software Distribution), adding TCP/IP networking and the vi editor.
+- 1983: AT&T released System V. UNIX split into two main families: System V and BSD.
+- 1980s-1990s: Commercial versions appeared: SunOS/Solaris (Sun), AIX (IBM), HP-UX (HP), Xenix (Microsoft).
+- 1988: POSIX standard defined a common UNIX interface.
+- 1991: Linus Torvalds created Linux, a free UNIX-like kernel; with GNU tools it became a complete free OS.
+- Today: UNIX ideas live in Linux, macOS (based on BSD/Darwin), Android and most servers.
+
+==============================================================================
+UX-T1-06  Explain the key features of the UNIX Operating System.
+Q: Q6. Explain the key features of the UNIX Operating System.
+==============================================================================
+
+----- FILE: code/UX-T1-06/answer.txt -----
+Q: Q6. Explain the key features of the UNIX Operating System.
+
+Key features of the UNIX Operating System
+
+1. Multi-user - many users can work on the same computer at the same time from different terminals.
+2. Multitasking - one user can run several programs (processes) at once, e.g. in the background with &.
+3. Portability - written mostly in C, so it can be moved to different hardware with little change.
+4. Hierarchical file system - files are organised in a tree starting from root (/).
+5. Shell (command interpreter) - powerful command language; shell scripts automate tasks.
+6. Security - user login/password, file permissions (read, write, execute for owner, group, others).
+7. Pipes and filters - output of one command can be input of another: ls | sort | more.
+8. Device independence - devices are treated as files (/dev), so the same commands work for files and devices.
+9. Networking - built-in support for TCP/IP, remote login, file transfer.
+10. Large set of utilities - grep, sed, awk, sort, cut, find, etc.
+11. Time-sharing and process management - fair CPU sharing among processes.
+
+==============================================================================
+UX-T1-07  Explain the type of the Shell with a suitable example.
+Q: Q7. Explain the type of the Shell with a suitable example.
+==============================================================================
+
+----- FILE: code/UX-T1-07/answer.txt -----
+Q: Q7. Explain the type of the Shell with a suitable example.
+
+Types of Shell (with example)
+
+A shell is the command interpreter: it reads commands typed by the user and asks the kernel to execute them. It is also a programming language for writing shell scripts.
+
+1. Bourne Shell (sh) - written by Stephen Bourne at Bell Labs; the original standard shell. Prompt: $. Path: /bin/sh.
+2. C Shell (csh) - written by Bill Joy (BSD); syntax similar to C language; added history and aliases. Prompt: %.
+3. Korn Shell (ksh) - written by David Korn (AT&T); compatible with Bourne shell plus C-shell features (history, aliases, arithmetic).
+4. Bourne Again Shell (bash) - GNU project; default shell on most Linux systems. Combines sh, csh and ksh features: command history, tab completion, arrays. Path: /bin/bash.
+5. TC Shell (tcsh) - improved C shell with command-line editing.
+6. Z Shell (zsh) - extended shell with plugins and themes; default on new macOS.
+
+Example:
+  echo $SHELL            # shows current shell, e.g. /bin/bash
+  cat /etc/shells        # lists installed shells
+  bash                   # start a bash shell
+  #!/bin/bash            # first line of a script selects the shell
+  echo "Hello from bash"
+
+==============================================================================
+UX-T1-08  Explain the Kernel Architecture with a neat diagram.
+Q: Q8. Explain the Kernel Architecture with a neat diagram.
+==============================================================================
+
+----- FILE: code/UX-T1-08/answer.txt -----
+Q: Q8. Explain the Kernel Architecture with a neat diagram.
+
+Kernel Architecture of UNIX (with diagram)
+
+The kernel is the core of UNIX. It is loaded into memory at boot and stays there. It directly controls the hardware and provides services to programs through system calls.
+
+Diagram (layers):
+  +-----------------------------------------------+
+  |        Users / Application programs           |
+  |   (shell, editors, compilers, a.out ...)      |
+  +-----------------------------------------------+
+  |        Libraries (libc)                       |
+  +=========== System Call Interface =============+
+  |                 KERNEL                        |
+  |  +-------------------+  +-------------------+ |
+  |  | File Subsystem    |  | Process Control   | |
+  |  |  - buffer cache   |  |   Subsystem       | |
+  |  |  - inode, files   |  |  - scheduler      | |
+  |  +-------------------+  |  - memory mgmt    | |
+  |  | Device drivers    |  |  - IPC            | |
+  |  | (char / block)    |  +-------------------+ |
+  |  +-------------------+                        |
+  |        Hardware Control                       |
+  +-----------------------------------------------+
+  |                 HARDWARE                      |
+  +-----------------------------------------------+
+
+Parts:
+1. System call interface - the only entry into the kernel (open, read, write, fork, exec, exit).
+2. File subsystem - manages files, directories, inodes, free space and the buffer cache; talks to block/character device drivers.
+3. Process control subsystem - process creation (fork), scheduling, memory management (swapping/paging) and inter-process communication (pipes, signals, messages).
+4. Device drivers - control disks, terminals, printers.
+5. Hardware control - handles interrupts and talks to the machine.
+
+User programs run in user mode; the kernel runs in kernel (privileged) mode.
+
+==============================================================================
+UX-T1-09  Explain the different Types of Kernel with suitable examples.
+Q: Q9. Explain the different Types of Kernel with suitable examples.
+==============================================================================
+
+----- FILE: code/UX-T1-09/answer.txt -----
+Q: Q9. Explain the different Types of Kernel with suitable examples.
+
+Types of Kernel (with examples)
+
+1. Monolithic kernel - the whole OS (file system, process management, memory, drivers) runs as one large program in kernel space. Fast because there is no message passing, but a bug in one part can crash the system.
+   Examples: traditional UNIX, Linux, MS-DOS.
+
+2. Microkernel - only the minimum (IPC, basic scheduling, low-level memory) runs in kernel space; file systems, drivers and services run as separate user-space servers. More reliable and secure, but slower due to message passing.
+   Examples: Mach, MINIX 3, QNX, L4.
+
+3. Hybrid kernel - mixes both: a microkernel-like design but with some services in kernel space for speed.
+   Examples: Windows NT/10/11, macOS XNU.
+
+4. Exokernel - very small kernel that only protects and allocates hardware; applications manage resources themselves through library OSes.
+   Example: MIT Exokernel (research).
+
+5. Nanokernel - extremely small kernel handling only interrupts and timing; used in embedded systems.
+
+Comparison: monolithic = fast, less modular; microkernel = modular, stable, slower; hybrid = balance.
+
+==============================================================================
+UX-T2-01  What is the login process in UNIX? Explain its purpose.
+Q: Q1. What is the login process in UNIX? Explain its purpose.
+==============================================================================
+
+----- FILE: code/UX-T2-01/answer.txt -----
+Q: Q1. What is the login process in UNIX? Explain its purpose.
+
+Login process in UNIX and its purpose
+
+When a UNIX system starts, init (or systemd) starts a getty process for each terminal.
+1. getty displays the "login:" prompt and reads the user name.
+2. getty runs the login program, which asks for the password.
+3. login checks the user name and password against /etc/passwd and /etc/shadow.
+4. If correct, login sets the user ID, group ID, home directory and environment (HOME, PATH, SHELL) and starts the user's shell (e.g. /bin/bash) in the home directory.
+5. The shell runs startup files (.profile, .bashrc) and shows the prompt ($).
+
+Purpose: to identify and authenticate the user, protect the system from unauthorised access, and give each user their own environment, files and permissions.
+
+==============================================================================
+UX-T2-02  Define an I-node. What information does it store?
+Q: Q2. Define an I-node. What information does it store?
+==============================================================================
+
+----- FILE: code/UX-T2-02/answer.txt -----
+Q: Q2. Define an I-node. What information does it store?
+
+I-node (index node) and the information it stores
+
+An inode is a data structure on disk that stores all information about a file except its name and its data. Every file has a unique inode number within a file system. The directory entry links the file name to the inode number.
+
+Information stored in an inode:
+1. File type (regular file, directory, link, device)
+2. File permissions (rwx for owner, group, others)
+3. Owner user ID (UID) and group ID (GID)
+4. File size in bytes
+5. Number of hard links
+6. Time stamps: last access (atime), last modification (mtime), last inode change (ctime)
+7. Addresses of the disk blocks holding the data (direct, single, double and triple indirect pointers)
+
+Command to see inode numbers: ls -i ;  details: stat filename
+
+==============================================================================
+UX-T2-03  Explain the purpose of the init process in UNIX.
+Q: Q3. Explain the purpose of the init process in UNIX.
+==============================================================================
+
+----- FILE: code/UX-T2-03/answer.txt -----
+Q: Q3. Explain the purpose of the init process in UNIX.
+
+Purpose of the init process in UNIX
+
+- init is the first user-level process started by the kernel at boot. Its process ID (PID) is 1.
+- It is the parent (ancestor) of all other processes.
+- It reads its configuration (/etc/inittab in System V, or unit files in systemd) and decides the run level / target.
+- It starts system services (daemons) and the getty processes that show the login prompt on terminals.
+- It adopts orphan processes (whose parent has died) and collects their exit status, removing zombie processes.
+- During shutdown or reboot it stops services and processes in an orderly way.
+
+On modern Linux, init is usually systemd (still PID 1).
+
+==============================================================================
+UX-T2-04  What are file access permissions? Name the three basic permission types.
+Q: Q4. What are file access permissions? Name the three basic permission types.
+==============================================================================
+
+----- FILE: code/UX-T2-04/answer.txt -----
+Q: Q4. What are file access permissions? Name the three basic permission types.
+
+File access permissions
+
+File permissions decide who can do what with a file or directory. UNIX defines permissions for three classes of users:
+- Owner (u) - the user who owns the file
+- Group (g) - users in the file's group
+- Others (o) - all other users
+
+Three basic permission types:
+1. Read (r = 4) - file: view contents; directory: list its files.
+2. Write (w = 2) - file: change contents; directory: create/delete files in it.
+3. Execute (x = 1) - file: run it as a program; directory: enter it with cd.
+
+Example: ls -l shows  -rwxr-xr--  meaning owner rwx, group r-x, others r--.
+
+==============================================================================
+UX-T2-05  Differentiate between logging out and shutting down a UNIX system.
+Q: Q5. Differentiate between logging out and shutting down a UNIX system.
+==============================================================================
+
+----- FILE: code/UX-T2-05/answer.txt -----
+Q: Q5. Differentiate between logging out and shutting down a UNIX system.
+
+Logging out vs shutting down a UNIX system
+
+Logging out:
+- Ends only the current user's session (their shell and processes).
+- Command: logout, exit, or Ctrl+D.
+- The system keeps running; other users stay logged in; a new login prompt appears.
+- Any user can log out.
+
+Shutting down:
+- Stops the whole system: all users are logged out, all processes and services are stopped, file systems are unmounted, then power is turned off (or the machine reboots).
+- Commands: shutdown -h now, halt, poweroff, shutdown -r now / reboot.
+- Normally only the superuser (root) can shut down.
+- Proper shutdown is needed to avoid data loss and file-system damage.
+
+==============================================================================
+UX-T2-06  Explain the UNIX login process and logout process with suitable examples.
+Q: B1. Explain the UNIX login process and logout process with suitable examples.
+==============================================================================
+
+----- FILE: code/UX-T2-06/answer.txt -----
+Q: B1. Explain the UNIX login process and logout process with suitable examples.
+
+UNIX login and logout process (with examples)
+
+LOGIN
+1. At boot, init/systemd starts a getty process on each terminal.
+2. getty shows:   login:
+3. User types the user name, e.g.  login: shivam
+4. getty starts the login program, which asks:   Password:
+5. login checks the entry in /etc/passwd (user name, UID, GID, home directory, shell) and the encrypted password in /etc/shadow.
+6. On success it changes to the user's home directory (e.g. /home/shivam), sets environment variables (HOME, USER, PATH, SHELL) and starts the login shell (/bin/bash).
+7. The shell reads /etc/profile and ~/.profile or ~/.bash_profile, then shows the prompt:
+      shivam@lab:~$
+8. On failure: "Login incorrect" is shown and login is asked again.
+
+Example session:
+   login: shivam
+   Password: ********
+   Last login: Thu Oct 15 10:00 on tty1
+   shivam@lab:~$ whoami
+   shivam
+
+LOGOUT
+1. The user types  logout  or  exit  or presses Ctrl+D.
+2. The shell runs ~/.bash_logout (if present), terminates the user's processes and exits.
+3. init/systemd notices the session ended and starts a new getty, so the  login:  prompt appears again.
+
+Example:
+   shivam@lab:~$ exit
+   logout
+   login:
+
+==============================================================================
+UX-T2-07  Define an I-node. Explain its functions and the information stored in it.
+Q: B2. Define an I-node. Explain its functions and the information stored in it.
+==============================================================================
+
+----- FILE: code/UX-T2-07/answer.txt -----
+Q: B2. Define an I-node. Explain its functions and the information stored in it.
+
+I-node: definition, functions and information stored
+
+Definition: an inode (index node) is a fixed-size structure in the file system that describes one file. It holds the file's metadata and the location of its data blocks, but not its name. Directory entries map names to inode numbers.
+
+Information stored:
+1. File type and permission bits (mode)
+2. Owner UID and group GID
+3. File size
+4. Link count (number of hard links)
+5. Time stamps: atime (last access), mtime (last data modification), ctime (last inode change)
+6. Data block pointers: 12 direct pointers + single, double and triple indirect pointers (classic UNIX design)
+
+Functions / uses:
+1. Locating data - the kernel uses the block pointers to read and write the file's data.
+2. Access control - permission bits and owner decide who can read/write/execute.
+3. Hard links - many names (directory entries) can point to the same inode; the file is deleted only when the link count becomes 0.
+4. Fast metadata operations - ls -l, stat, find read the inode without reading the data.
+5. Rename/move within the same file system only changes the directory entry, not the inode or data.
+
+Diagram:
+  Directory entry            Inode 1234                 Data blocks
+  +----------------+     +------------------+       +-----------+
+  | "notes.txt" 1234 |-->| type, perms, uid |  ---> | block 501 |
+  +----------------+     | size, links, times|  ---> | block 502 |
+                         | block pointers   |       +-----------+
+                         +------------------+
+
+Commands:  ls -i file  (inode number);  stat file  (all inode details);  df -i  (inode usage).
+
+==============================================================================
+UX-T2-08  Explain the UNIX file system hierarchy and describe the purpose of important directories.
+Q: B3. Explain the UNIX file system hierarchy and describe the purpose of important directories.
+==============================================================================
+
+----- FILE: code/UX-T2-08/answer.txt -----
+Q: B3. Explain the UNIX file system hierarchy and describe the purpose of important directories.
+
+UNIX file system hierarchy and important directories
+
+UNIX uses a single inverted-tree hierarchy starting at root (/). All files, devices and mounted disks appear under it.
+
+                    /
+  +-----+-----+-----+-----+-----+-----+-----+-----+
+ bin  sbin  etc  home  dev  lib  tmp  usr  var  boot ...
+
+Important directories:
+- /       Root of the whole file system.
+- /bin    Essential user commands (ls, cp, mv, cat, bash).
+- /sbin   System administration commands (shutdown, fdisk, ifconfig).
+- /etc    System configuration files (passwd, shadow, hosts, fstab).
+- /home   Home directories of users (/home/shivam).
+- /root   Home directory of the superuser.
+- /dev    Device files (/dev/sda disk, /dev/tty terminals, /dev/null).
+- /lib    Shared libraries needed by /bin and /sbin programs, kernel modules.
+- /usr    User programs and data: /usr/bin, /usr/lib, /usr/share, /usr/local.
+- /var    Variable data: logs (/var/log), mail, spool, caches.
+- /tmp    Temporary files; often cleared at reboot.
+- /boot   Boot loader files and the kernel image.
+- /opt    Optional add-on application software.
+- /mnt, /media  Mount points for temporary file systems, USB drives, CD-ROMs.
+- /proc   Virtual file system with process and kernel information.
+
+Paths: absolute path starts from / (e.g. /home/shivam/a.txt); relative path starts from the current directory (e.g. docs/a.txt).
+
+==============================================================================
+UX-T2-09  Explain the stages of the UNIX booting process and the role of the init process.
+Q: B4. Explain the stages of the UNIX booting process and the role of the init process.
+==============================================================================
+
+----- FILE: code/UX-T2-09/answer.txt -----
+Q: B4. Explain the stages of the UNIX booting process and the role of the init process.
+
+Stages of the UNIX booting process and the role of init
+
+1. BIOS / UEFI (firmware)
+   - Power-on self test (POST) checks hardware.
+   - Finds the boot device and loads the boot loader from the boot sector (MBR) or EFI partition.
+2. Boot loader (e.g. GRUB / LILO)
+   - Shows boot menu, loads the kernel image (/boot/vmlinuz) and initial RAM disk (initrd) into memory and passes control to the kernel.
+3. Kernel initialisation
+   - Detects and initialises CPU, memory and devices, loads drivers, mounts the root file system (/) read-only, then starts the first process: /sbin/init (PID 1).
+4. init (or systemd)
+   - Reads /etc/inittab (System V) or its units (systemd).
+   - Decides run level / target: 0 halt, 1 single-user, 3 multi-user text, 5 graphical, 6 reboot.
+   - Runs start-up scripts (/etc/rc.d, /etc/init.d) to check and mount file systems, start networking and daemons (cron, sshd, printing).
+5. getty and login
+   - init starts getty on each terminal, which shows the login: prompt; after login the user's shell starts.
+
+Role of init: it is the first process (PID 1) and parent of all processes; it brings the system to the required run level, starts and supervises services, starts login terminals, adopts orphan processes and handles orderly shutdown/reboot.
+
+==============================================================================
+UX-T2-10  Explain UNIX file permissions using symbolic and numeric methods with examples.
+Q: B5. Explain UNIX file permissions using symbolic and numeric methods with examples.
+==============================================================================
+
+----- FILE: code/UX-T2-10/answer.txt -----
+Q: B5. Explain UNIX file permissions using symbolic and numeric methods with examples.
+
+UNIX file permissions: symbolic and numeric methods (with examples)
+
+ls -l output:   -rwxr-x---  1 shivam staff 120 Oct 15 a.sh
+ - first character: file type (- file, d directory, l link)
+ - next 9 characters: owner (rwx), group (r-x), others (---)
+
+Permission values: r = 4, w = 2, x = 1, - = 0
+
+1) Symbolic method   chmod [who][operator][permissions] file
+   who: u (owner), g (group), o (others), a (all)
+   operator: + add, - remove, = set exactly
+   Examples:
+     chmod u+x a.sh          # give owner execute
+     chmod g-w notes.txt     # remove write from group
+     chmod o=r notes.txt     # others get read only
+     chmod a+r notes.txt     # everyone can read
+     chmod u=rwx,g=rx,o= a.sh
+
+2) Numeric (octal) method   chmod NNN file
+   Each digit = sum of r(4) + w(2) + x(1), in order owner, group, others.
+   Examples:
+     chmod 755 a.sh     # rwx r-x r-x  (7=4+2+1, 5=4+1)
+     chmod 644 a.txt    # rw- r-- r--
+     chmod 700 secret   # rwx --- ---
+     chmod 777 file     # rwx rwx rwx (everyone full access, not safe)
+
+Related commands:
+     ls -l file            # display permissions
+     chown user file       # change owner
+     chgrp group file      # change group
+     umask 022             # default permissions for new files (666-022 = 644)
 

@@ -1,0 +1,27 @@
+=== A4/Program_04 on port 8113 (C:\Users\shiva\AppData\Local\Temp\claude\c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s\42b06c1d-83dd-422f-9bc9-63efcfaceaf8\scratchpad\aspfix_suite1\A4\Program_04)
+  PASS Prog4.aspx GET 200 :: rows=3
+  PASS Prog4.aspx INSERT :: msg='Record inserted.' rows 3->4 row=['Select', '4', 'ZZTestEmp', 'QA', '12345.50', '9000000001']
+  PASS Prog4.aspx SELECT row fills form :: form={'txtEmployeeName': 'ZZTestEmp', 'txtDepartment': 'QA', 'txtSalary': '12345.50', 'txtContactNo': '9000000001'}
+  PASS Prog4.aspx UPDATE :: msg='Record updated.' key=4 row=['Select', '4', 'ZZTestEmpUpd', 'QA', '22222.00', '9000000001']
+  PASS Prog4.aspx DELETE :: msg='Record deleted.' rows now 3 (before 3)
+  PASS Prog4.aspx UPDATE without selection guarded :: msg='Select a record first.'
+  PASS Prog4.aspx INSERT with blank name rejected :: msg='Insert failed: check all field values.'
+=== A4/Program_06 on port 8115 (C:\Users\shiva\AppData\Local\Temp\claude\c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s\42b06c1d-83dd-422f-9bc9-63efcfaceaf8\scratchpad\aspfix_suite1\A4\Program_06)
+  PASS A4P6 master header/menu/footer
+  PASS Prog6.aspx GET 200 :: rows=4
+  PASS Prog6.aspx INSERT :: msg='Record inserted.' rows 4->5 row=['Select', '990', 'ZZTestStu', '20', 'Female', 'BCA']
+  PASS Prog6.aspx SELECT row fills form :: form={'txtRollNo': '990', 'txtName': 'ZZTestStu', 'txtAge': '20', 'txtGender': 'Female', 'txtCourse': 'BCA'}
+  PASS Prog6.aspx UPDATE :: msg='Record updated.' key=990 row=['Select', '990', 'ZZTestStuUpd', '21', 'Female', 'BCA']
+  PASS Prog6.aspx DELETE :: msg='Record deleted.' rows now 4 (before 4)
+  PASS Prog6.aspx UPDATE without selection guarded :: msg='Select a record first.'
+  PASS Prog6.aspx INSERT with blank name rejected :: msg='Insert failed: check all field values.'
+=== A4/Program_07 on port 8116 (C:\Users\shiva\AppData\Local\Temp\claude\c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s\42b06c1d-83dd-422f-9bc9-63efcfaceaf8\scratchpad\aspfix_suite1\A4\Program_07)
+  PASS Prog7.aspx GET 200 :: rows=2
+  PASS Prog7.aspx INSERT :: msg='Record inserted.' rows 2->3 row=['Select', '3', 'ZZTestMed', 'Tablet', '10.25', '5', '2028-01-31']
+  PASS Prog7.aspx SELECT row fills form :: form={'txtMedicineName': 'ZZTestMed', 'txtCategory': 'Tablet', 'txtPrice': '10.25', 'txtQuantity': '5', 'txtExpiryDate': '2028-01-31'}
+  PASS Prog7.aspx UPDATE :: msg='Record updated.' key=3 row=['Select', '3', 'ZZTestMedUpd', 'Tablet', '10.25', '7', '2028-01-31']
+  PASS Prog7.aspx DELETE :: msg='Record deleted.' rows now 2 (before 2)
+  PASS Prog7.aspx UPDATE without selection guarded :: msg='Select a record first.'
+  PASS Prog7.aspx INSERT with blank name rejected :: msg='Insert failed: check all field values.'
+
+SUMMARY: 22 pass, 0 fail

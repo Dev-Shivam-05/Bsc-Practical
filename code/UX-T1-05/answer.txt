@@ -1,0 +1,14 @@
+Q: Q5. Explain the History of UNIX.
+
+History of UNIX
+
+- 1965-1969: Bell Labs, MIT and General Electric worked on MULTICS. Bell Labs left the project.
+- 1969: Ken Thompson and Dennis Ritchie at AT&T Bell Labs wrote the first UNIX on a PDP-7 computer, in assembly language.
+- 1971: First edition of UNIX released on PDP-11.
+- 1973: UNIX was rewritten in the C language (created by Dennis Ritchie). This made UNIX portable to other machines.
+- Late 1970s: AT&T gave UNIX source code to universities. University of California, Berkeley developed BSD (Berkeley Software Distribution), adding TCP/IP networking and the vi editor.
+- 1983: AT&T released System V. UNIX split into two main families: System V and BSD.
+- 1980s-1990s: Commercial versions appeared: SunOS/Solaris (Sun), AIX (IBM), HP-UX (HP), Xenix (Microsoft).
+- 1988: POSIX standard defined a common UNIX interface.
+- 1991: Linus Torvalds created Linux, a free UNIX-like kernel; with GNU tools it became a complete free OS.
+- Today: UNIX ideas live in Linux, macOS (based on BSD/Darwin), Android and most servers.

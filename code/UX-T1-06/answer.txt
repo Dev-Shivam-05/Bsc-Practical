@@ -1,0 +1,15 @@
+Q: Q6. Explain the key features of the UNIX Operating System.
+
+Key features of the UNIX Operating System
+
+1. Multi-user - many users can work on the same computer at the same time from different terminals.
+2. Multitasking - one user can run several programs (processes) at once, e.g. in the background with &.
+3. Portability - written mostly in C, so it can be moved to different hardware with little change.
+4. Hierarchical file system - files are organised in a tree starting from root (/).
+5. Shell (command interpreter) - powerful command language; shell scripts automate tasks.
+6. Security - user login/password, file permissions (read, write, execute for owner, group, others).
+7. Pipes and filters - output of one command can be input of another: ls | sort | more.
+8. Device independence - devices are treated as files (/dev), so the same commands work for files and devices.
+9. Networking - built-in support for TCP/IP, remote login, file transfer.
+10. Large set of utilities - grep, sed, awk, sort, cut, find, etc.
+11. Time-sharing and process management - fair CPU sharing among processes.

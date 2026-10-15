@@ -1,0 +1,12 @@
+Q: Q4. List the Common Operating Systems.
+
+Common Operating Systems
+
+1. UNIX - multi-user, multitasking OS developed at AT&T Bell Labs (1969). Used on servers and workstations (Solaris, AIX, HP-UX).
+2. Linux - free, open-source UNIX-like OS (Linus Torvalds, 1991). Distributions: Ubuntu, Fedora, Debian, Red Hat.
+3. Microsoft Windows - GUI-based OS for PCs and servers (Windows 10, 11, Windows Server).
+4. macOS - Apple's UNIX-based OS for Mac computers.
+5. Android - Linux-kernel based mobile OS by Google.
+6. iOS - Apple's mobile OS for iPhone.
+7. Chrome OS - Google's Linux-based OS for Chromebooks.
+8. MS-DOS - early single-user, command-line OS by Microsoft.

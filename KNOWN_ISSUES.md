@@ -15,7 +15,7 @@
 - UX-P1-03: the question wording is unclear in places ("Copy in the same directory a.txt in the ty directory"). It was read as `cp a.txt a_copy.txt` inside `ty`.
 - Shivam's scripts check input with regex. That is correct but more advanced than typical class code. Be ready to explain `[[ $n =~ ^[0-9]+$ ]]` (it checks that n is a number).
 - Questions in the official sheets that are the same as Shivam's programs (UX-P2-03/04/05/09/12) reuse his scripts. Those scripts print a little extra, such as modulus or positive/negative. This is harmless.
-- UNIX theory questions (Assignment 1 & 2, 19 questions) are listed in QUESTION_CATALOG.csv as `not-a-program`. They have no code and no answers in this package.
+- UNIX theory questions (Assignment 1 & 2, 19 questions) now have written answers (UX-T1-xx, UX-T2-xx, status `answered`). They were written in this session from standard UNIX textbook content; read them before writing them in your own words.
 
 ## WFS (PHP + MySQL)
 - Runtime-tested on PHP 8.2.34 + MariaDB 11.8.9 (portable), not on XAMPP itself. db.php defaults match XAMPP defaults: root, empty password, 127.0.0.1:3306.
@@ -30,10 +30,7 @@
 - If the lab has SQL Express instead of LocalDB: change `Data Source=(LocalDB)\MSSQLLocalDB` to `Data Source=.\SQLEXPRESS` in Web.config. That alternative string was tested only as far as the expected "server not found" error on this laptop, which has no SQLEXPRESS.
 - If PracticalDB.sql is not run first, the page fails with HTTP 500 "Cannot open database" (tested).
 - ASP-B-04: Windows Smart App Control may block a freshly built Hello.exe. Fallback (tested): build a DLL and inspect it with ildasm.
-- ASP-B-05: "CLR" is only explained, not shown on the page.
-- ASP-B-10: a blank Age is accepted.
-- ASP-A2-06: the menu is a plain `<nav>` of links, not an `<asp:Menu>` control.
-- ASP-A2-04/07: Salary and Price editing may fail on a PC set to use a comma as the decimal mark. en-IN and en-US are fine.
+- FIXED in v1.2 (re-tested): ASP-B-05 now shows CLR version + Finally block; ASP-B-10 Age is now required; ASP-A2-06 uses an `<asp:Menu>` control; ASP-A2-04/07 Salary/Price edit works on any PC number format.
 - Demo login for ASP-A2-08/10: Prince / prince123 (classroom only).
 - `HOW_TO_RUN.md` inside the ASP folders says "not runtime-verified". That is now out of date.
 - On the test laptop, port 8080 was already in use. Use another port such as 8081 (`run_site.bat` picks a free port automatically).
