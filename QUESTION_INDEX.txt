@@ -521,7 +521,7 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
 # ASP.NET Basic / Foundation practicals (index page 2)
 ##############################################################################
 
-[ASP-B-01]  (UNTESTED)  Simple ASP.NET page
+[ASP-B-01]  (VERIFIED)  Simple ASP.NET page
   Q: Create a simple ASP.NET PAGE
   Folder: code/ASP-B-01/
   Files: Default.aspx, style.css
@@ -530,9 +530,10 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
     2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Default.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-B-02]  (UNTESTED)  Code-behind coding
+[ASP-B-02]  (VERIFIED)  Code-behind coding
   Q: DEMONSTRATE CODE-BEHIND CODING
   Folder: code/ASP-B-02/
   Files: Default.aspx, Default.aspx.vb, style.css
@@ -541,9 +542,10 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
     2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Default.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-B-03]  (UNTESTED)  Inline coding
+[ASP-B-03]  (VERIFIED)  Inline coding
   Q: Demonstrate inline coding
   Folder: code/ASP-B-03/
   Files: Default.aspx, style.css
@@ -552,31 +554,36 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
     2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Default.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-B-04]  (UNTESTED)  MSIL compilation
+[ASP-B-04]  (VERIFIED)  MSIL compilation
   Q: Demonstrate MSIL compilation
   Folder: code/ASP-B-04/
-  Files: Hello.vb, Build_And_Inspect.txt, style.css
+  Files: Hello.vb, Build_And_Inspect.txt
   Keywords: msil il ildasm vbc compile intermediate language
+  NOTE:  If Windows blocks Hello.exe, build a DLL (vbc /target:library) and inspect it with ildasm - see Build_And_Inspect.txt (improved copy).
   Run:
-    1. Visual Studio 'Developer Command Prompt' kholo (ya normal cmd).
-    2. "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\vbc.exe" Hello.vb   -> Hello.exe banega
-    3. Hello.exe   -> output dikhega
-    4. ildasm Hello.exe   -> MSIL code dikhega (ildasm Visual Studio Developer Command Prompt me milta hai). Build_And_Inspect.txt dekho.
+    1. Start menu -> 'Developer Command Prompt for VS' kholo (ya normal cmd). Folder me jao jahan Hello.vb save kiya.
+    2. C:\Windows\Microsoft.NET\Framework64\v4.0.30319\vbc.exe /target:exe /out:Hello.exe Hello.vb   -> Hello.exe banega
+    3. Hello.exe   -> output: Hello from managed .NET code
+    4. ildasm Hello.exe (GUI: Hello -> Main double-click) ya  ildasm /text Hello.exe  -> MSIL (ldstr, call, ret) dikhega. ildasm sirf Developer Command Prompt me PATH par hota hai.
+    5. Windows Hello.exe block kare ('virus or potentially unwanted software'): vbc /target:library /out:HelloLib.dll Hello.vb  phir  ildasm /text HelloLib.dll
 
-[ASP-B-05]  (UNTESTED)  CLR and exception handling
+[ASP-B-05]  (VERIFIED)  CLR and exception handling
   Q: Demonstrate CLR and Exception Handling
   Folder: code/ASP-B-05/
   Files: Default.aspx, Default.aspx.vb, style.css
   Keywords: clr exception try catch finally divide by zero error handling
+  NOTE:  CLR is only implied (page shows exception handling, not CLR details) - explain verbally: CLR runs the IL, manages memory and raises the exceptions.
   Run:
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
     2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Default.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-B-06]  (UNTESTED)  Encapsulation
+[ASP-B-06]  (VERIFIED)  Encapsulation
   Q: Demonstrate Encapsulation
   Folder: code/ASP-B-06/
   Files: Default.aspx, App_Code/StudentProfile.vb, Default.aspx.vb, style.css
@@ -585,9 +592,10 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
     2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Default.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-B-07]  (UNTESTED)  Inheritance
+[ASP-B-07]  (VERIFIED)  Inheritance
   Q: Demonstrate Inheritance
   Folder: code/ASP-B-07/
   Files: Default.aspx, App_Code/PersonBase.vb, App_Code/StudentRecord.vb, Default.aspx.vb, style.css
@@ -596,9 +604,10 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
     2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Default.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-B-08]  (UNTESTED)  Method overloading
+[ASP-B-08]  (VERIFIED)  Method overloading
   Q: Demonstrate Method overloading
   Folder: code/ASP-B-08/
   Files: Default.aspx, App_Code/Calculator.vb, Default.aspx.vb, style.css
@@ -607,9 +616,10 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
     2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Default.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-B-09]  (UNTESTED)  Button click event
+[ASP-B-09]  (VERIFIED)  Button click event
   Q: Demonstrate Button Click Event
   Folder: code/ASP-B-09/
   Files: Default.aspx, Default.aspx.vb, style.css
@@ -618,24 +628,27 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
     2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Default.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-B-10]  (UNTESTED)  Mini practical: student information form
+[ASP-B-10]  (VERIFIED)  Mini practical: student information form
   Q: Mini Practical: Student information form
   Folder: code/ASP-B-10/
   Files: Default.aspx, Default.aspx.vb, style.css
   Keywords: student information form textbox dropdown radio submit mini practical
+  NOTE:  Blank Age is accepted (no RequiredFieldValidator on Age) - minor.
   Run:
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Default.aspx hai).
     2. Solution Explorer me Default.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Default.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Default.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
 ##############################################################################
 # ASP.NET Assignment 2 - Web Forms (index page 1)
 ##############################################################################
 
-[ASP-A2-01]  (UNTESTED)  GridView with SQL Server data binding
+[ASP-A2-01]  (VERIFIED)  GridView with SQL Server data binding
   Q: Create an ASP.NET Web Form that uses a GridView control to display student records stored in a SQL Server database. Implement data binding so that the records are displayed dynamically in the GridView.
   Folder: code/ASP-A2-01/
   Files: Prog1.aspx, App_Code/Db.vb, HOW_TO_RUN.md, PracticalDB.sql, Prog1.aspx.vb, Web.config, site.css
@@ -646,9 +659,10 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     3. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog1.aspx hai).
     4. Solution Explorer me Prog1.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     5. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    6. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog1.aspx
+    6. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Prog1.aspx
+    7. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-A2-02]  (UNTESTED)  Login form with validators
+[ASP-A2-02]  (VERIFIED)  Login form with validators
   Q: Design a Login Form using ASP.NET Web Forms with Username and Password fields. Apply: RequiredFieldValidator for Username and Password. CompareValidator to compare Password and Confirm Password. Display appropriate validation error messages.
   Folder: code/ASP-A2-02/
   Files: Prog2.aspx, HOW_TO_RUN.md, PracticalDB.sql, Prog2.aspx.vb, Web.config, site.css
@@ -657,9 +671,10 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog2.aspx hai).
     2. Solution Explorer me Prog2.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog2.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Prog2.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-A2-03]  (UNTESTED)  Master Page with student information
+[ASP-A2-03]  (VERIFIED)  Master Page with student information
   Q: Create a Master Page containing a Header, Navigation section, Footer, and a ContentPlaceHolder. Create a Content Page and attach it to the Master Page. Display student information inside the ContentPlaceHolder.
   Folder: code/ASP-A2-03/
   Files: Prog3.aspx, HOW_TO_RUN.md, PracticalDB.sql, Prog3.aspx.vb, Student.master, Web.config, site.css
@@ -668,22 +683,25 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog3.aspx hai).
     2. Solution Explorer me Prog3.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog3.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Prog3.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-A2-04]  (UNTESTED)  Employee Management (CRUD)
+[ASP-A2-04]  (VERIFIED)  Employee Management (CRUD)
   Q: Employee Management: Create an ASP.NET Web Form to perform CRUD operations on an Employee table containing EmployeeID, EmployeeName, Department, Salary, and ContactNo.
   Folder: code/ASP-A2-04/
   Files: Prog4.aspx, App_Code/Db.vb, HOW_TO_RUN.md, PracticalDB.sql, Prog4.aspx.vb, Web.config, site.css
   Keywords: employee crud insert update delete select salary department contact
+  NOTE:  Salary uses PC number format: on a PC with comma decimal mark, Update after Select may fail (en-IN/en-US fine).
   Run:
     1. PEHLE database banao: SSMS me PracticalDB.sql open karke Execute (F5) karo. Ya cmd: sqlcmd -S "(localdb)\MSSQLLocalDB" -i PracticalDB.sql
     2. Web.config me connectionString check karo: Data Source=(LocalDB)\MSSQLLocalDB. Lab me SQL Express ho to Data Source=.\SQLEXPRESS likho.
     3. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog4.aspx hai).
     4. Solution Explorer me Prog4.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     5. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    6. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog4.aspx
+    6. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Prog4.aspx
+    7. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-A2-05]  (UNTESTED)  Customer Management (CRUD, ADO.NET)
+[ASP-A2-05]  (VERIFIED)  Customer Management (CRUD, ADO.NET)
   Q: Customer Management: Create a customer registration form and implement CRUD operations using ADO.NET. Store CustomerID, CustomerName, Email, Phone, and Address.
   Folder: code/ASP-A2-05/
   Files: Prog5.aspx, App_Code/Db.vb, HOW_TO_RUN.md, PracticalDB.sql, Prog5.aspx.vb, Web.config, site.css
@@ -694,46 +712,53 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     3. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog5.aspx hai).
     4. Solution Explorer me Prog5.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     5. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    6. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog5.aspx
+    6. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Prog5.aspx
+    7. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-A2-06]  (UNTESTED)  Student Management CRUD with Master Page
+[ASP-A2-06]  (VERIFIED)  Student Management CRUD with Master Page
   Q: Create a Master Page containing Header, Menu, and Footer. Create a Student Management Content Page and implement complete CRUD operations. (field:- RollNo, Name, Age, Gender, Course)
   Folder: code/ASP-A2-06/
   Files: Prog6.aspx, App_Code/Db.vb, HOW_TO_RUN.md, PracticalDB.sql, Prog6.aspx.vb, Student.master, Web.config, site.css
   Keywords: student management crud master page menu rollno age gender course
+  NOTE:  Menu is a plain <nav> of links, not an <asp:Menu> control - say 'Menu section' if asked.
   Run:
     1. PEHLE database banao: SSMS me PracticalDB.sql open karke Execute (F5) karo. Ya cmd: sqlcmd -S "(localdb)\MSSQLLocalDB" -i PracticalDB.sql
     2. Web.config me connectionString check karo: Data Source=(LocalDB)\MSSQLLocalDB. Lab me SQL Express ho to Data Source=.\SQLEXPRESS likho.
     3. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog6.aspx hai).
     4. Solution Explorer me Prog6.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     5. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    6. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog6.aspx
+    6. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Prog6.aspx
+    7. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-A2-07]  (UNTESTED)  Pharmacy Medicine Records (CRUD)
+[ASP-A2-07]  (VERIFIED)  Pharmacy Medicine Records (CRUD)
   Q: Pharmacy Medicine Records: Create a Web Form for managing medicine records using CRUD operations. Store MedicineID, MedicineName, Category, Price, Quantity, and ExpiryDate.
   Folder: code/ASP-A2-07/
   Files: Prog7.aspx, App_Code/Db.vb, HOW_TO_RUN.md, PracticalDB.sql, Prog7.aspx.vb, Web.config, site.css
   Keywords: pharmacy medicine crud category price quantity expiry date
+  NOTE:  Price uses PC number format (same note as ASP-A2-04).
   Run:
     1. PEHLE database banao: SSMS me PracticalDB.sql open karke Execute (F5) karo. Ya cmd: sqlcmd -S "(localdb)\MSSQLLocalDB" -i PracticalDB.sql
     2. Web.config me connectionString check karo: Data Source=(LocalDB)\MSSQLLocalDB. Lab me SQL Express ho to Data Source=.\SQLEXPRESS likho.
     3. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Prog7.aspx hai).
     4. Solution Explorer me Prog7.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     5. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    6. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Prog7.aspx
+    6. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Prog7.aspx
+    7. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-A2-08]  (UNTESTED)  Login.aspx to Welcome.aspx (Response.Redirect)
+[ASP-A2-08]  (VERIFIED)  Login.aspx to Welcome.aspx (Response.Redirect)
   Q: Create two Web Forms, Login.aspx and Welcome.aspx. After successful login, use the Response.Redirect() method to navigate from Login.aspx to Welcome.aspx
   Folder: code/ASP-A2-08/
   Files: Login.aspx, HOW_TO_RUN.md, Login.aspx.vb, PracticalDB.sql, Web.config, Welcome.aspx, Welcome.aspx.vb, site.css
   Keywords: login welcome response.redirect redirect navigate two pages
+  NOTE:  Demo login: Prince / prince123.
   Run:
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme Login.aspx hai).
     2. Solution Explorer me Login.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/Login.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/Login.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-A2-09]  (UNTESTED)  Store and read a Cookie
+[ASP-A2-09]  (VERIFIED)  Store and read a Cookie
   Q: Create an ASP.NET Web Form that accepts the user's name and stores it in a Cookie. On another page, retrieve the cookie and display the user's name.
   Folder: code/ASP-A2-09/
   Files: SetCookie.aspx, GetCookie.aspx, GetCookie.aspx.vb, HOW_TO_RUN.md, PracticalDB.sql, SetCookie.aspx.vb, Web.config, site.css
@@ -742,18 +767,21 @@ Use Ctrl+F (Notepad) to search. Code is in the folder shown, or in ALL_CODE.txt.
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme SetCookie.aspx hai).
     2. Solution Explorer me SetCookie.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/SetCookie.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/SetCookie.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
-[ASP-A2-10]  (UNTESTED)  Login using Session and Cookies + Logout
+[ASP-A2-10]  (VERIFIED)  Login using Session and Cookies + Logout
   Q: Login using Session and Cookies: Create a Login Web Form with Username and Password. After successful login: Store the username in a Session variable. Store the username in a Cookie. Redirect the user to a Welcome page using Response.Redirect(). Display the username on the Welcome page. Provide a Logout option to clear the Session.
   Folder: code/ASP-A2-10/
   Files: LoginSession.aspx, HOW_TO_RUN.md, LoginSession.aspx.vb, PracticalDB.sql, Web.config, WelcomeSession.aspx, WelcomeSession.aspx.vb, site.css
   Keywords: session cookie login logout welcome redirect state management
+  NOTE:  Demo login: Prince / prince123.
   Run:
     1. Visual Studio -> File -> Open -> Web Site... -> ye program ka folder select karo (jisme LoginSession.aspx hai).
     2. Solution Explorer me LoginSession.aspx par right-click -> Set As Start Page -> Ctrl+F5 (Run).
     3. Agar naya project banana pade: File -> New -> Web Site -> ASP.NET Empty Web Site (Visual Basic) -> har file Add -> New Item se banao aur code paste karo. App_Code folder wali .vb files App_Code folder me hi rakho.
-    4. Visual Studio na chale to (IIS Express): "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path>" /port:8080  phir browser me http://localhost:8080/LoginSession.aspx
+    4. Visual Studio ke bina (tested): package ka run_site.bat use karo -> program folder ko run_site.bat par drag-and-drop karo. Ya cmd: "C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder ka full path, end me \ nahi>" /port:8081  phir browser: http://localhost:8081/LoginSession.aspx
+    5. Port busy error (0x80070020) aaye to dusra port do: /port:8082
 
 ##############################################################################
 # WFS Assignment 2 - PHP, MySQL, AJAX

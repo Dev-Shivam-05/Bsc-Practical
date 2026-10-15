@@ -1,7 +1,27 @@
-Windows Developer Command Prompt with .NET Framework tools:
-  vbc.exe /target:exe /out:Hello.exe Hello.vb
-  ildasm.exe Hello.exe
+Program 4 - Demonstrate MSIL compilation
+==========================================
 
-Inspect the IL method body: ldstr, call, and ret are examples of IL
-instructions. The CLR's JIT compiles IL to native instructions at run time.
-The commands and IL disassembly are NOT runtime-verified in this environment.
+1. Compile the VB source to an assembly (MSIL inside a PE file):
+     C:\Windows\Microsoft.NET\Framework64\v4.0.30319\vbc.exe /target:exe /out:Hello.exe Hello.vb
+   (In "Developer Command Prompt for VS" you can type just: vbc /target:exe /out:Hello.exe Hello.vb)
+
+2. Run it (the CLR JIT-compiles the IL to native code at run time):
+     Hello.exe
+   Expected output:  Hello from managed .NET code
+
+3. Inspect the MSIL with ildasm:
+     GUI : ildasm Hello.exe        -> expand "Hello" -> double-click "Main : void()"
+     Text: ildasm /text Hello.exe   (prints the IL to the console)
+   ildasm is not on the normal PATH. Full path on a machine with Visual Studio / .NET SDK:
+     "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\ildasm.exe"
+
+   Expected IL for Main (verified):
+     IL_0000:  ldstr      "Hello from managed .NET code"
+     IL_0005:  call       void [mscorlib]System.Console::WriteLine(string)
+     IL_000a:  ret
+
+If Windows blocks Hello.exe ("file contains a virus or potentially unwanted software",
+caused by Smart App Control / Defender on brand-new unsigned exe files), build a DLL instead
+and inspect that - the IL of Main is identical:
+     vbc /target:library /out:HelloLib.dll Hello.vb
+     ildasm /text HelloLib.dll

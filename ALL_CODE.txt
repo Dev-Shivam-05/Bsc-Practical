@@ -725,9 +725,9 @@ rmdir foldername && echo "foldername removed"
 
 ----- TESTED OUTPUT -----
 --- pwd ---
-/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmp6x2uwcs6
+/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpr9lg43ju
 --- date ---
-Thu Oct 15 05:21:49 PM UTC 2026
+Thu Oct 15 05:44:11 PM UTC 2026
 --- whoami ---
 Dev-Shivam-05
 --- tty ---
@@ -742,7 +742,7 @@ basic_commands.sh
 ..
 basic_commands.sh
 --- ls -i ---
-2533274791746187 basic_commands.sh
+3940649675370317 basic_commands.sh
 --- cat filename.txt ---
 Hello UNIX
 This is my first file
@@ -775,11 +775,11 @@ ls
 
 ----- TESTED OUTPUT -----
 Now inside:
-/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmp0wc8221f/UNIX_LAB/Programs
+/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpty1crvpz/UNIX_LAB/Programs
 total 0
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 30 Oct 15 17:21 hello.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 30 Oct 15 17:44 hello.txt
 Back in:
-/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmp0wc8221f/UNIX_LAB
+/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpty1crvpz/UNIX_LAB
 Empty directory Data removed
 Programs
 
@@ -816,11 +816,11 @@ lab
 programm
 --- ls -l ---
 total 0
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 17:21 a_copy.txt
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 17:21 a.txt
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05   0 Oct 15 17:21 b.txt
-drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 17:21 lab
-drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 17:21 programm
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 17:44 a_copy.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05  29 Oct 15 17:44 a.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05   0 Oct 15 17:44 b.txt
+drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 17:44 lab
+drwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 512 Oct 15 17:44 programm
 --- ls -a ---
 .
 ..
@@ -1047,15 +1047,15 @@ echo "Read: r=4, w=2, x=1. 755 = rwx r-x r-x (owner, group, others). 644 = rw- r
 
 ----- TESTED OUTPUT -----
 --- default ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:21 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:44 perm.txt
 --- chmod u+x (symbolic) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:21 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:44 perm.txt
 --- chmod go-r (symbolic) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:21 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:44 perm.txt
 --- chmod 755 (numeric) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:21 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:44 perm.txt
 --- chmod 644 (numeric) ---
--rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:21 perm.txt
+-rwxrwxrwx 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:44 perm.txt
 Read: r=4, w=2, x=1. 755 = rwx r-x r-x (owner, group, others). 644 = rw- r-- r--
 
 ==============================================================================
@@ -1087,11 +1087,11 @@ WSL2_GUI_APPS_ENABLED=1
 WSL_DISTRO_NAME=Debian
 NAME=Lappy
 PERF_EXEC_PATH=/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/libexec/perf-core
-PWD=/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmpscpeyw6m
+PWD=/mnt/c/Users/shiva/AppData/Local/Temp/claude/c--Users-shiva-OneDrive-Desktop-SEM-05-Practical-s/42b06c1d-83dd-422f-9bc9-63efcfaceaf8/scratchpad/tmptsokkzsu
 LOGNAME=Dev-Shivam-05
 HOME=/home/Dev-Shivam-05
 LANG=en_US.UTF-8
-WSL_INTEROP=/run/WSL/546_interop
+WSL_INTEROP=/run/WSL/550_interop
 myname = Shivam
 after unset: myname = ''
 
@@ -1112,7 +1112,7 @@ echo "Date and Time     : $(date)"
 Name              : SHIVAM BHADORIYA
 Enrollment Number : 240606302109
 Course            : TY B.Sc. IT (Semester V)
-Date and Time     : Thu Oct 15 05:21:52 PM UTC 2026
+Date and Time     : Thu Oct 15 05:44:17 PM UTC 2026
 
 ==============================================================================
 UX-P2-03  Arithmetic operations (same as UX-A2-01)
@@ -1442,25 +1442,33 @@ Public Module Hello
 End Module
 
 ----- FILE: code/ASP-B-04/Build_And_Inspect.txt -----
-Windows Developer Command Prompt with .NET Framework tools:
-  vbc.exe /target:exe /out:Hello.exe Hello.vb
-  ildasm.exe Hello.exe
+Program 4 - Demonstrate MSIL compilation
+==========================================
 
-Inspect the IL method body: ldstr, call, and ret are examples of IL
-instructions. The CLR's JIT compiles IL to native instructions at run time.
-The commands and IL disassembly are NOT runtime-verified in this environment.
+1. Compile the VB source to an assembly (MSIL inside a PE file):
+     C:\Windows\Microsoft.NET\Framework64\v4.0.30319\vbc.exe /target:exe /out:Hello.exe Hello.vb
+   (In "Developer Command Prompt for VS" you can type just: vbc /target:exe /out:Hello.exe Hello.vb)
 
------ FILE: code/ASP-B-04/style.css -----
-body { margin:0; font:16px/1.55 Arial,sans-serif; color:#17344a; background:#f5f8fa; }
-main { max-width:760px; margin:46px auto; padding:28px; border-radius:12px;
-  background:white; box-shadow:0 4px 24px #12304718; }
-h1 { margin-top:0; color:#123047; font-size:27px; }
-label { display:block; margin:12px 0 5px; font-weight:600; }
-input, select { padding:10px; border:1px solid #b7c9d0; border-radius:6px; }
-button, input[type=submit] { background:#0a6774; color:white; border:0;
-  border-radius:6px; padding:10px 17px; cursor:pointer; margin:10px 0; }
-.message { background:#edf7f6; padding:12px; display:block; margin-top:14px; }
-.error { color:#b42318; }
+2. Run it (the CLR JIT-compiles the IL to native code at run time):
+     Hello.exe
+   Expected output:  Hello from managed .NET code
+
+3. Inspect the MSIL with ildasm:
+     GUI : ildasm Hello.exe        -> expand "Hello" -> double-click "Main : void()"
+     Text: ildasm /text Hello.exe   (prints the IL to the console)
+   ildasm is not on the normal PATH. Full path on a machine with Visual Studio / .NET SDK:
+     "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\ildasm.exe"
+
+   Expected IL for Main (verified):
+     IL_0000:  ldstr      "Hello from managed .NET code"
+     IL_0005:  call       void [mscorlib]System.Console::WriteLine(string)
+     IL_000a:  ret
+
+If Windows blocks Hello.exe ("file contains a virus or potentially unwanted software",
+caused by Smart App Control / Defender on brand-new unsigned exe files), build a DLL instead
+and inspect that - the IL of Main is identical:
+     vbc /target:library /out:HelloLib.dll Hello.vb
+     ildasm /text HelloLib.dll
 
 ==============================================================================
 ASP-B-05  CLR and exception handling

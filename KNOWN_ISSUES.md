@@ -26,7 +26,17 @@
 - Each program's `RUN_ME.md` says it was "not database-backed runtime tested". That was true for the original author. It is now out of date: see TEST_REPORT.md.
 
 ## ASP.NET
-(see TEST_REPORT.md section "ASP.NET" for exact results)
+- All 20 programs compile and run (see TEST_REPORT.md). The lab still needs Visual Studio or IIS Express, plus SQL Server LocalDB for the database programs (ASP-A2-01, 04, 05, 06, 07).
+- If the lab has SQL Express instead of LocalDB: change `Data Source=(LocalDB)\MSSQLLocalDB` to `Data Source=.\SQLEXPRESS` in Web.config. That alternative string was tested only as far as the expected "server not found" error on this laptop, which has no SQLEXPRESS.
+- If PracticalDB.sql is not run first, the page fails with HTTP 500 "Cannot open database" (tested).
+- ASP-B-04: Windows Smart App Control may block a freshly built Hello.exe. Fallback (tested): build a DLL and inspect it with ildasm.
+- ASP-B-05: "CLR" is only explained, not shown on the page.
+- ASP-B-10: a blank Age is accepted.
+- ASP-A2-06: the menu is a plain `<nav>` of links, not an `<asp:Menu>` control.
+- ASP-A2-04/07: Salary and Price editing may fail on a PC set to use a comma as the decimal mark. en-IN and en-US are fine.
+- Demo login for ASP-A2-08/10: Prince / prince123 (classroom only).
+- `HOW_TO_RUN.md` inside the ASP folders says "not runtime-verified". That is now out of date.
+- On the test laptop, port 8080 was already in use. Use another port such as 8081 (`run_site.bat` picks a free port automatically).
 
 ## Companion page
 - Tested only in Edge and Chrome (desktop, Windows, file://, offline). Not tested in Firefox, Safari or on Linux browsers.

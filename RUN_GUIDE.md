@@ -63,6 +63,8 @@ bash q05.sh          # HAMESHA bash se. "sh q05.sh" mat likhna
 4. Lab me LocalDB nahi, SQL Express hai → `Web.config` me `Data Source=(LocalDB)\MSSQLLocalDB` ko `Data Source=.\SQLEXPRESS` karo.
 5. Naya project banana pade: File → New → Web Site → **ASP.NET Empty Web Site (Visual Basic)** → files add karke code paste.
 6. Login programs (ASP-A2-08, 10) ka demo login: **Prince / prince123**.
+7. Visual Studio na ho / jaldi chalana ho: program folder ko package ke **run_site.bat** par drag-and-drop karo (IIS Express hona chahiye). Ya: `"C:\Program Files\IIS Express\iisexpress.exe" /path:"<folder>" /port:8081` -> `http://localhost:8081/Prog4.aspx`
+8. Database program me error "Cannot open database" = PracticalDB.sql nahi chala. Pehle wo chalao.
 
 ### WFS (PHP + MySQL, XAMPP)
 1. XAMPP Control Panel → **Apache Start**, **MySQL Start**.
