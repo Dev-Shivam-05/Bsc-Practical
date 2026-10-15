@@ -20,10 +20,11 @@ Version: v1.0 (2026-10-15)
 
 1. Browser kholo → `github.com/Dev-Shivam-05/Bsc-Practical`
 2. Green button **Code** → **Download ZIP**.
-3. Downloads folder me ZIP par right-click → **Extract All** → Extract. (Linux: `unzip bca-sem5-practicals-*.zip`)
+3. Downloads folder me ZIP par right-click → **Extract All** → Extract. (Linux: `unzip Bsc-Practical-main.zip`)
 4. Extracted folder (`Bsc-Practical-main` jaisa naam) kholo → **START_HERE.html** double-click.
 5. **ZIP download na ho** to: GitHub website par hi folder `code/<ID>/` kholo → file kholo → upar **Copy raw file** button (ya **Raw** → Ctrl+A, Ctrl+C).
-6. Agar repo **private** hai to GitHub par login karna padega (password + 2FA). Isliye public rakhna ya login details yaad rakhna zaroori hai.
+6. **Sabse fast (bina ZIP):** browser me seedha kholo → `https://dev-shivam-05.github.io/Bsc-Practical/START_HERE.html` (internet chahiye jab tak page khula hai; code copy wahin se).
+7. Agar repo **private** hai to GitHub par login karna padega (password + 2FA). Isliye public rakhna ya login details yaad rakhna zaroori hai.
 
 ## 3. Question kaise dhundhna hai
 

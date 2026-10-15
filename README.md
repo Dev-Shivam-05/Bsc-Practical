@@ -6,6 +6,8 @@
 2. Extracted folder me **`START_HERE.html`** double-click karo (internet ke bina chalega).
 3. Search box me question ka word ya number likho (`factorial`, `cookie`, `a2 5`, `crud`) → **Copy code** → run steps follow karo.
 
+Online seedha kholna ho: https://dev-shivam-05.github.io/Bsc-Practical/START_HERE.html
+
 ZIP na chale to: neeche table se folder kholo → file → **Copy raw file** button.
 
 | Kya | Kahan |
