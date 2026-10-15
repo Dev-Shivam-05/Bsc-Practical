@@ -1,0 +1,281 @@
+### basic_commands.sh | input:  | syntax=OK | exit=0
+[H[2J[3J--- pwd ---
+/tmp/<tempdir>
+--- date ---
+Thu Oct 15 05:16:07 PM UTC 2026
+--- whoami ---
+Dev-Shivam-05
+--- tty ---
+not a tty
+(no terminal attached)
+--- uname -a ---
+Linux Lappy 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026 x86_64 GNU/Linux
+--- ls ---
+basic_commands.sh
+--- ls -a ---
+.
+..
+basic_commands.sh
+--- ls -i ---
+8 basic_commands.sh
+--- cat filename.txt ---
+Hello UNIX
+This is my first file
+--- cat -n filename.txt ---
+     1	Hello UNIX
+     2	This is my first file
+--- wc filename.txt ---
+ 2  7 33 filename.txt
+--- diff filename.txt copy.txt (no output = same) ---
+Files are identical
+foldername removed
+### directory_management.sh | input:  | syntax=OK | exit=0
+Now inside:
+/tmp/<tempdir>/UNIX_LAB/Programs
+total 4
+-rw-r--r-- 1 Dev-Shivam-05 Dev-Shivam-05 30 Oct 15 17:16 hello.txt
+Back in:
+/tmp/<tempdir>/UNIX_LAB
+Empty directory Data removed
+Programs
+### file_management.sh | input:  | syntax=OK | exit=0
+--- ls ---
+a_copy.txt
+a.txt
+b.txt
+lab
+programm
+--- ls -l ---
+total 8
+-rw-r--r-- 1 Dev-Shivam-05 Dev-Shivam-05 29 Oct 15 17:16 a_copy.txt
+-rw-r--r-- 1 Dev-Shivam-05 Dev-Shivam-05 29 Oct 15 17:16 a.txt
+-rw-r--r-- 1 Dev-Shivam-05 Dev-Shivam-05  0 Oct 15 17:16 b.txt
+drwxr-xr-x 2 Dev-Shivam-05 Dev-Shivam-05 60 Oct 15 17:16 lab
+drwxr-xr-x 2 Dev-Shivam-05 Dev-Shivam-05 60 Oct 15 17:16 programm
+--- ls -a ---
+.
+..
+a_copy.txt
+a.txt
+b.txt
+lab
+programm
+--- ls -R ---
+.:
+a_copy.txt
+a.txt
+b.txt
+lab
+programm
+
+./lab:
+a.txt
+
+./programm:
+z.txt
+### file_viewing.sh | input:  | syntax=OK | exit=0
+--- cat ---
+Line number 1
+Line number 2
+Line number 3
+Line number 4
+Line number 5
+Line number 6
+Line number 7
+Line number 8
+Line number 9
+Line number 10
+Line number 11
+Line number 12
+Line number 13
+Line number 14
+Line number 15
+--- head (first 5) ---
+Line number 1
+Line number 2
+Line number 3
+Line number 4
+Line number 5
+--- tail (last 5) ---
+Line number 11
+Line number 12
+Line number 13
+Line number 14
+Line number 15
+--- nl ---
+     1	Line number 1
+     2	Line number 2
+     3	Line number 3
+     4	Line number 4
+     5	Line number 5
+     6	Line number 6
+     7	Line number 7
+     8	Line number 8
+     9	Line number 9
+    10	Line number 10
+    11	Line number 11
+    12	Line number 12
+    13	Line number 13
+    14	Line number 14
+    15	Line number 15
+--- more ---
+
+::::::::::::::
+view.txt
+::::::::::::::
+Line number 1
+Line number 2
+Line number 3
+Line number 4
+Line number 5
+Line number 6
+Line number 7
+Line number 8
+Line number 9
+Line number 10
+Line number 11
+Line number 12
+Line number 13
+Line number 14
+Line number 15
+--- less (press q to quit) ---
+Line number 1
+Line number 2
+Line number 3
+Line number 4
+Line number 5
+Line number 6
+Line number 7
+Line number 8
+Line number 9
+Line number 10
+Line number 11
+Line number 12
+Line number 13
+Line number 14
+Line number 15
+### file_comparison.sh | input:  | syntax=OK | exit=0
+--- cmp (first differing byte) ---
+f1.txt f2.txt differ: byte 14, line 3
+--- diff (line changes) ---
+3c3
+< cherry
+---
+> grapes
+--- comm (col1: only f1, col2: only f2, col3: common) ---
+		apple
+		banana
+cherry
+	grapes
+		mango
+Observation: cmp shows first difference, diff shows how to change f1 into f2, comm shows unique and common lines.
+### file_processing.sh | input:  | syntax=OK | exit=0
+--- wc ---
+ 5  5 51 data.txt
+--- sort ---
+Aman,BSCIT
+Aman,BSCIT
+Karan,BCOM
+Neha,BCA
+Riya,BCA
+--- sort | uniq ---
+Aman,BSCIT
+Karan,BCOM
+Neha,BCA
+Riya,BCA
+--- cut (names) ---
+Riya
+Aman
+Neha
+Aman
+Karan
+--- paste ---
+Riya,BCA,78
+Aman,BSCIT,92
+Neha,BCA,65
+Aman,BSCIT,92
+Karan,BCOM,85
+--- tr (uppercase) ---
+RIYA,BCA
+AMAN,BSCIT
+NEHA,BCA
+AMAN,BSCIT
+KARAN,BCOM
+### file_permissions.sh | input:  | syntax=OK | exit=0
+--- default ---
+-rw-r--r-- 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:16 perm.txt
+--- chmod u+x (symbolic) ---
+-rwxr--r-- 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:16 perm.txt
+--- chmod go-r (symbolic) ---
+-rwx------ 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:16 perm.txt
+--- chmod 755 (numeric) ---
+-rwxr-xr-x 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:16 perm.txt
+--- chmod 644 (numeric) ---
+-rw-r--r-- 1 Dev-Shivam-05 Dev-Shivam-05 0 Oct 15 17:16 perm.txt
+Read: r=4, w=2, x=1. 755 = rwx r-x r-x (owner, group, others). 644 = rw- r-- r--
+### env_variables.sh | input:  | syntax=OK | exit=0
+--- some environment variables ---
+HOME=/home/Dev-Shivam-05
+USER=Dev-Shivam-05
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/bin:/mnt/c/Users/shiva/bin:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/local/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/Users/shiva/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Tailscale:/mnt/c/Program Files/Microsoft SQL Server/170/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/GitHub CLI:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/WSL:/mnt/c/Users/shiva/AppData/Local/Programs/Microsoft/jdk-17.0.10.7-hotspot/bin:/mnt/c/Users/shiva/AppData/Local/jcode/bin:/mnt/c/Users/shiva/AppData/Local/Programs/Python/Python311/Scripts:/mnt/c/Users/shiva/AppData/Local/Programs/Python/Python311:/mnt/c/Users/shiva/AppData/Local/Programs/Trae/bin:/mnt/c/Users/shiva/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shiva/AppData/Local/PowerToys/DSCModules:/mnt/c/Users/shiva/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shiva/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/shiva/AppData/Local/Programs/Kiro/bin:/mnt/c/Users/shiva/AppData/Local/Microsoft/WinGet/Links:/mnt/c/Users/shiva/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.2-full_build/bin:/mnt/c/Users/shiva/go/bin:/mnt/c/Users/shiva/.bun/bin:/mnt/c/Users/shiva/.claude/bin:/mnt/c/Users/shiva/.dotnet/tools:/mnt/c/Users/shiva/AppData/Local/Microsoft/WinGet/Packages/Gitleaks.Gitleaks_Microsoft.Winget.Source_8wekyb3d8bbwe:/mnt/c/Users/shiva/AppData/Roaming/npm:/mnt/c/Program Files/Git/usr/bin/vendor_perl:/mnt/c/Program Files/Git/usr/bin/core_perl
+--- full list (first 10 lines of env) ---
+SHELL=/bin/bash
+WSL2_GUI_APPS_ENABLED=1
+WSL_DISTRO_NAME=Debian
+NAME=Lappy
+PERF_EXEC_PATH=/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/libexec/perf-core
+PWD=/tmp/<tempdir>
+LOGNAME=Dev-Shivam-05
+HOME=/home/Dev-Shivam-05
+LANG=en_US.UTF-8
+WSL_INTEROP=/run/WSL/201_interop
+myname = Shivam
+after unset: myname = ''
+### my_details.sh | input:  | syntax=OK | exit=0
+Name              : SHIVAM BHADORIYA
+Enrollment Number : 240606302109
+Course            : TY B.Sc. IT (Semester V)
+Date and Time     : Thu Oct 15 05:16:07 PM UTC 2026
+### grade.sh | input: 85 | syntax=OK | exit=0
+Grade: A
+### grade.sh | input: 60 | syntax=OK | exit=0
+Grade: B
+### grade.sh | input: 59 | syntax=OK | exit=0
+Grade: C
+### grade.sh | input: 35 | syntax=OK | exit=0
+Grade: D
+### grade.sh | input: 10 | syntax=OK | exit=0
+Fail
+### grade.sh | input: 101 | syntax=OK | exit=0
+Invalid marks
+### grade.sh | input: abc | syntax=OK | exit=0
+Invalid marks
+### loops.sh | input: 7\n5 | syntax=OK | exit=0
+Numbers 1 to 10:
+1 2 3 4 5 6 7 8 9 10 
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70
+Sum of first 5 numbers = 15
+### loops.sh | input: 3\n0 | syntax=OK | exit=0
+Numbers 1 to 10:
+1 2 3 4 5 6 7 8 9 10 
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 5 = 15
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+3 x 10 = 30
+Sum of first 0 numbers = 0

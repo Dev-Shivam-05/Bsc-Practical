@@ -1,0 +1,248 @@
+### q01.sh | input: 10 2 | syntax=OK | exit=0
+Addition: 12
+Subtraction: 8
+Multiplication: 20
+Division: 5
+Modulus: 0
+### q01.sh | input: 7 0 | syntax=OK | exit=0
+Addition: 7
+Subtraction: 7
+Multiplication: 0
+Division and modulus are undefined for zero divisor.
+### q01.sh | input: -7 2 | syntax=OK | exit=0
+Addition: -5
+Subtraction: -9
+Multiplication: -14
+Division: -3
+Modulus: -1
+### q01.sh | input: abc 2 | syntax=OK | exit=1
+Please enter valid integers.
+### q02.sh | input: 3 9 5 | syntax=OK | exit=0
+Largest: 9
+### q02.sh | input: 5 5 5 | syntax=OK | exit=0
+Largest: 5
+### q02.sh | input: -1 -9 -3 | syntax=OK | exit=0
+Largest: -1
+### q03.sh | input: 8 | syntax=OK | exit=0
+Even
+Positive
+### q03.sh | input: -7 | syntax=OK | exit=0
+Odd
+Negative
+### q03.sh | input: 0 | syntax=OK | exit=0
+Even
+Zero
+### q04.sh | input: 5 | syntax=OK | exit=0
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+### q05.sh | input: 5 | syntax=OK | exit=0
+5! = 120
+### q05.sh | input: 0 | syntax=OK | exit=0
+0! = 1
+### q05.sh | input: -3 | syntax=OK | exit=1
+Invalid non-negative integer.
+### q06.sh | input: 29 | syntax=OK | exit=0
+29 is prime
+### q06.sh | input: 1 | syntax=OK | exit=0
+1 is not prime
+### q06.sh | input: 49 | syntax=OK | exit=0
+49 is not prime
+### q07.sh | input:  | syntax=OK | exit=0
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
+### q08.sh | input: 7 | syntax=OK | exit=0
+0 1 1 2 3 5 8 
+### q08.sh | input: 0 | syntax=OK | exit=0
+
+### q09.sh | input: 12321 | syntax=OK | exit=0
+12321 is a palindrome
+### q09.sh | input: 123 | syntax=OK | exit=0
+123 is not a palindrome
+### q10.sh | input: 1234 | syntax=OK | exit=0
+Reversed number: 4321
+### q10.sh | input: 1200 | syntax=OK | exit=0
+Reversed number: 21
+### q11.sh | input: 123 | syntax=OK | exit=0
+Sum of digits: 6
+### q12.sh | input: 3\n12 45\n4\n5 0\n9\n6 | syntax=OK | exit=0
+
+1. Add  2. Subtract  3. Multiply  4. Divide
+5. Modulus  6. Exit
+Result: 540
+
+1. Add  2. Subtract  3. Multiply  4. Divide
+5. Modulus  6. Exit
+Cannot use zero as divisor
+
+1. Add  2. Subtract  3. Multiply  4. Divide
+5. Modulus  6. Exit
+Invalid choice
+
+1. Add  2. Subtract  3. Multiply  4. Divide
+5. Modulus  6. Exit
+Goodbye
+### q13.sh | input: zaid\nhello | syntax=OK | exit=0
+Length: 4
+Strings are different
+First string is not empty
+Reverse: diaz
+### q13.sh | input: \nx | syntax=OK | exit=0
+Length: 0
+Strings are different
+First string is empty
+Reverse: 
+### q14.sh | input: q01.sh | syntax=OK | exit=0
+Path exists
+Regular file
+read permission: yes
+write permission: yes
+execute permission: yes
+### q14.sh | input: /nonexistent | syntax=OK | exit=0
+Path does not exist
+### q14.sh | input: . | syntax=OK | exit=0
+Path exists
+Directory
+read permission: yes
+write permission: yes
+execute permission: yes
+### q15.sh | input: 10 | syntax=OK | exit=0
+Factorial of 10 = 3628800
+### q15.sh | input: -2 | syntax=OK | exit=1
+Factorial requires a non-negative integer
+### c01.sh | input:  | syntax=OK | exit=0
+Generated files:
+part_aa
+part_ab
+part_ac
+part_ad
+All contents in order:
+This is line 1
+This is line 2
+This is line 3
+This is line 4
+This is line 5
+This is line 6
+This is line 7
+This is line 8
+This is line 9
+This is line 10
+This is line 11
+This is line 12
+This is line 13
+This is line 14
+This is line 15
+This is line 16
+This is line 17
+This is line 18
+This is line 19
+This is line 20
+### c02.sh | input:  | syntax=OK | exit=0
+First difference (cmp):
+file1.txt file2.txt differ: byte 8, line 2
+Changed lines (diff):
+2c2
+< Banana
+---
+> Blueberry
+3a4
+> Date
+### c03.sh | input:  | syntax=OK | exit=0
+Names A-Z:
+Name|Marks
+Aman|92
+Karan|85
+Neha|65
+Riya|78
+Marks low-high:
+Name|Marks
+Neha|65
+Riya|78
+Karan|85
+Aman|92
+Marks high-low:
+Name|Marks
+Aman|92
+Karan|85
+Riya|78
+Neha|65
+### c04.sh | input:  | syntax=OK | exit=0
+Merged file:
+Apple
+Banana
+Cherry
+Date
+### c05.sh | input:  | syntax=OK | exit=0
+Sorted by name:
+Roll|Name|Marks
+102|Aman|92
+104|Karan|85
+103|Neha|65
+101|Riya|78
+Sorted by marks:
+Roll|Name|Marks
+103|Neha|65
+101|Riya|78
+104|Karan|85
+102|Aman|92
+### c06.sh | input:  | syntax=OK | exit=0
+Name Riya:
+Riya studies Information Technology
+Containing Computer:
+Aman studies Computer Science
+Neha studies Computer Science
+Count containing Computer:
+2
+Case-insensitive riya:
+Riya studies Information Technology
+### c07.sh | input:  | syntax=OK | exit=0
+Lines 2-3:
+The blue sky is clear.
+The red car is fast.
+Replace red with yellow:
+The yellow rose is beautiful.
+The blue sky is clear.
+The yellow car is fast.
+The green tree is tall.
+Delete line 2:
+The red rose is beautiful.
+The red car is fast.
+The green tree is tall.
+Lines containing tree:
+The green tree is tall.
+### c08.sh | input:  | syntax=OK | exit=0
+Name	Course
+Aman	BCA
+Riya	BScIT
+Neha	BCA
+### c09.sh | input:  | syntax=OK | exit=0
+Name	Total	Average
+Aman	265	88.33
+Riya	245	81.67
+Neha	207	69.00
+### c10.sh | input:  | syntax=OK | exit=0
+Sorted by salary:
+ID|Name|Department|Salary
+E103|Neha|Sales|45000
+E102|Riya|HR|48000
+E104|Karan|Sales|52000
+E101|Aman|IT|60000
+Department Sales:
+E103|Neha|Sales|45000
+E104|Karan|Sales|52000
+Sales renamed to Marketing in displayed text:
+ID|Name|Department|Salary
+E103|Neha|Marketing|45000
+E101|Aman|IT|60000
+E104|Karan|Marketing|52000
+E102|Riya|HR|48000
+Salary above 50000:
+ID|Name|Department|Salary
+E101|Aman|IT|60000
+E104|Karan|Sales|52000

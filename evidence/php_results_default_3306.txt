@@ -1,0 +1,216 @@
+################ Program_01 (port 3306, unmodified db.php, no env vars)
+GET /index.php  -> HTTP 200
+  [PASS] index_200 title='Employee Management System'
+  [PASS] csrf_token_in_form 
+  form fields: ['name', 'email', 'department', 'designation', 'salary']
+POST /index.php {"name": "Ravi Patel", "email": "ravi@example.com", "department": "IT", "designation": "Developer", "salary": "45000", "csrf": "bad..."} -> HTTP 403
+  [PASS] insert_rejected_bad_csrf Invalid CSRF token.
+POST /index.php {"name": "", "email": "ravi@example.com", "department": "IT", "designation": "Developer", "salary": "45000", "csrf": "966a34d0..."} -> HTTP 200
+  [PASS] validation_empty_field alert='Name is required.'
+POST /index.php {"name": "Ravi Patel", "email": "ravi@example.com", "department": "IT", "designation": "Developer", "salary": "45000", "csrf": "966a34d0..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Ravi Patel 
+POST /index.php {"name": "Anita Shah", "email": "anita@example.com", "department": "HR", "designation": "Manager", "salary": "60000", "csrf": "966a34d0..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Anita Shah 
+GET /index.php  -> HTTP 200
+  displayed rows: [['1', 'Ravi Patel', 'ravi@example.com', 'IT', 'Developer', '45000.00', 'Edit Delete'], ['2', 'Anita Shah', 'anita@example.com', 'HR', 'Manager', '60000.00', 'Edit Delete']]
+  [PASS] display_all_inserted 
+GET /edit.php?id=1  -> HTTP 200
+  [PASS] edit_page_200 
+POST /edit.php?id=1 {"name": "Ravi Patel", "email": "ravi.p@example.com", "department": "IT", "designation": "Senior Developer", "salary": "52000.50", "csrf": "966a34d0..."} -> HTTP 302 Location: index.php
+  [PASS] update_redirect 
+GET /index.php  -> HTTP 200
+  [PASS] update_persisted row=[['1', 'Ravi Patel', 'ravi.p@example.com', 'IT', 'Senior Developer', '52000.50', 'Edit Delete']]
+GET /edit.php?id=999999  -> HTTP 404
+  [PASS] edit_missing_404 
+GET /edit.php?id=abc  -> HTTP 400
+  [PASS] edit_bad_id_400 
+GET /delete.php?id=1  -> HTTP 405
+  [PASS] delete_via_GET_refused_405 
+POST /delete.php {"id": "1", "csrf": "bad..."} -> HTTP 403
+  [PASS] delete_bad_csrf_403 
+POST /delete.php {"id": "1", "csrf": "966a34d0..."} -> HTTP 302 Location: index.php
+  [PASS] delete_redirect 
+GET /index.php  -> HTTP 200
+  [PASS] delete_removed_row remaining=[['2', 'Anita Shah', 'anita@example.com', 'HR', 'Manager', '60000.00', 'Edit Delete']]
+SUMMARY Program_1: 16/16 PASS 
+################ Program_02 (port 3306, unmodified db.php, no env vars)
+GET /index.php  -> HTTP 200
+  [PASS] index_200 title='Course Management System'
+  [PASS] csrf_token_in_form 
+  form fields: ['course_name', 'duration', 'fees', 'course_description']
+POST /index.php {"course_name": "BCA", "duration": "3 Years", "fees": "75000", "course_description": "Bachelor of Computer Applications", "csrf": "bad..."} -> HTTP 403
+  [PASS] insert_rejected_bad_csrf Invalid CSRF token.
+POST /index.php {"course_name": "", "duration": "3 Years", "fees": "75000", "course_description": "Bachelor of Computer Applications", "csrf": "3fe10491..."} -> HTTP 200
+  [PASS] validation_empty_field alert='Course Name is required.'
+POST /index.php {"course_name": "BCA", "duration": "3 Years", "fees": "75000", "course_description": "Bachelor of Computer Applications", "csrf": "3fe10491..."} -> HTTP 302 Location: index.php
+  [PASS] insert_BCA 
+POST /index.php {"course_name": "PGDCA", "duration": "1 Year", "fees": "30000", "course_description": "Post Graduate Diploma", "csrf": "3fe10491..."} -> HTTP 302 Location: index.php
+  [PASS] insert_PGDCA 
+GET /index.php  -> HTTP 200
+  displayed rows: [['1', 'BCA', '3 Years', '75000.00', 'Bachelor of Computer Applications', 'Edit Delete'], ['2', 'PGDCA', '1 Year', '30000.00', 'Post Graduate Diploma', 'Edit Delete']]
+  [PASS] display_all_inserted 
+GET /edit.php?id=1  -> HTTP 200
+  [PASS] edit_page_200 
+POST /edit.php?id=1 {"course_name": "BCA Hons", "duration": "4 Years", "fees": "90000", "course_description": "Updated <b>desc</b> & \"quotes\"", "csrf": "3fe10491..."} -> HTTP 302 Location: index.php
+  [PASS] update_redirect 
+GET /index.php  -> HTTP 200
+  [PASS] update_persisted row=[['1', 'BCA Hons', '4 Years', '90000.00', 'Updated <b>desc</b> & "quotes"', 'Edit Delete']]
+  [PASS] xss_escaped_in_display 
+GET /edit.php?id=999999  -> HTTP 404
+  [PASS] edit_missing_404 
+GET /edit.php?id=abc  -> HTTP 400
+  [PASS] edit_bad_id_400 
+GET /delete.php?id=1  -> HTTP 405
+  [PASS] delete_via_GET_refused_405 
+POST /delete.php {"id": "1", "csrf": "bad..."} -> HTTP 403
+  [PASS] delete_bad_csrf_403 
+POST /delete.php {"id": "1", "csrf": "3fe10491..."} -> HTTP 302 Location: index.php
+  [PASS] delete_redirect 
+GET /index.php  -> HTTP 200
+  [PASS] delete_removed_row remaining=[['2', 'PGDCA', '1 Year', '30000.00', 'Post Graduate Diploma', 'Edit Delete']]
+SUMMARY Program_2: 17/17 PASS 
+################ Program_03 (port 3306, unmodified db.php, no env vars)
+GET /index.php  -> HTTP 200
+  [PASS] index_200 title='Product Management and WHERE Search'
+  [PASS] csrf_token_in_form 
+  form fields: ['product_name', 'category', 'price', 'stock']
+POST /index.php {"product_name": "Laptop", "category": "Electronics", "price": "55000", "stock": "10", "csrf": "bad..."} -> HTTP 403
+  [PASS] insert_rejected_bad_csrf Invalid CSRF token.
+POST /index.php {"product_name": "", "category": "Electronics", "price": "55000", "stock": "10", "csrf": "39bc1343..."} -> HTTP 200
+  [PASS] validation_empty_field alert='Product Name is required.'
+POST /index.php {"product_name": "Laptop", "category": "Electronics", "price": "55000", "stock": "10", "csrf": "39bc1343..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Laptop 
+POST /index.php {"product_name": "Notebook", "category": "Stationery", "price": "40", "stock": "500", "csrf": "39bc1343..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Notebook 
+POST /index.php {"product_name": "Mouse", "category": "Electronics", "price": "499.99", "stock": "50", "csrf": "39bc1343..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Mouse 
+GET /index.php  -> HTTP 200
+  displayed rows: [['1', 'Laptop', 'Electronics', '55000.00', '10', 'Edit Delete'], ['2', 'Notebook', 'Stationery', '40.00', '500', 'Edit Delete'], ['3', 'Mouse', 'Electronics', '499.99', '50', 'Edit Delete']]
+  [PASS] display_all_inserted 
+GET /index.php?q=Electronics  -> HTTP 200
+  [PASS] search_Electronics expected 2, got 2: [['1', 'Laptop', 'Electronics', '55000.00', '10', 'Edit Delete'], ['3', 'Mouse', 'Electronics', '499.99', '50', 'Edit Delete']]
+GET /index.php?q=note  -> HTTP 200
+  [PASS] search_note expected 1, got 1: [['2', 'Notebook', 'Stationery', '40.00', '500', 'Edit Delete']]
+GET /index.php?q=zzz  -> HTTP 200
+  [PASS] search_zzz expected 0, got 0: [['No matching records.']]
+GET /edit.php?id=1  -> HTTP 200
+  [PASS] edit_page_200 
+POST /edit.php?id=1 {"product_name": "Gaming Laptop", "category": "Electronics", "price": "85000", "stock": "5", "csrf": "39bc1343..."} -> HTTP 302 Location: index.php
+  [PASS] update_redirect 
+GET /index.php  -> HTTP 200
+  [PASS] update_persisted row=[['1', 'Gaming Laptop', 'Electronics', '85000.00', '5', 'Edit Delete']]
+GET /edit.php?id=999999  -> HTTP 404
+  [PASS] edit_missing_404 
+GET /edit.php?id=abc  -> HTTP 400
+  [PASS] edit_bad_id_400 
+GET /delete.php?id=1  -> HTTP 405
+  [PASS] delete_via_GET_refused_405 
+POST /delete.php {"id": "1", "csrf": "bad..."} -> HTTP 403
+  [PASS] delete_bad_csrf_403 
+POST /delete.php {"id": "1", "csrf": "39bc1343..."} -> HTTP 302 Location: index.php
+  [PASS] delete_redirect 
+GET /index.php  -> HTTP 200
+  [PASS] delete_removed_row remaining=[['2', 'Notebook', 'Stationery', '40.00', '500', 'Edit Delete'], ['3', 'Mouse', 'Electronics', '499.99', '50', 'Edit Delete']]
+SUMMARY Program_3: 20/20 PASS 
+################ Program_04 (port 3306, unmodified db.php, no env vars)
+GET /index.php  -> HTTP 200
+  [PASS] index_200 title='Customer Management with AJAX'
+  [PASS] csrf_token_in_form 
+  form fields: ['name', 'email', 'phone', 'city']
+POST /index.php {"name": "Zara Khan", "email": "zara@example.com", "phone": "9876543210", "city": "Surat", "csrf": "bad..."} -> HTTP 403
+  [PASS] insert_rejected_bad_csrf Invalid CSRF token.
+POST /index.php {"name": "", "email": "zara@example.com", "phone": "9876543210", "city": "Surat", "csrf": "e08e00da..."} -> HTTP 200
+  [PASS] validation_empty_field alert='Name is required.'
+POST /index.php {"name": "Zara Khan", "email": "zara@example.com", "phone": "9876543210", "city": "Surat", "csrf": "e08e00da..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Zara Khan 
+POST /index.php {"name": "Amit Desai", "email": "amit@example.com", "phone": "9123456780", "city": "Vadodara", "csrf": "e08e00da..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Amit Desai 
+POST /index.php {"name": "Meera Joshi", "email": "meera@example.com", "phone": "9988776655", "city": "Surat", "csrf": "e08e00da..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Meera Joshi 
+GET /index.php  -> HTTP 200
+  displayed rows: [['2', 'Amit Desai', 'amit@example.com', '9123456780', 'Vadodara', 'Edit Delete'], ['3', 'Meera Joshi', 'meera@example.com', '9988776655', 'Surat', 'Edit Delete'], ['1', 'Zara Khan', 'zara@example.com', '9876543210', 'Surat', 'Edit Delete']]
+  [PASS] display_all_inserted 
+  [PASS] sorted_display column order=['Amit Desai', 'Meera Joshi', 'Zara Khan']
+GET /search.php?q=Surat  -> HTTP 200
+  [PASS] search_Surat expected 2, got 2: [['3', 'Meera Joshi', 'meera@example.com', '9988776655', 'Surat', 'Edit Delete'], ['1', 'Zara Khan', 'zara@example.com', '9876543210', 'Surat', 'Edit Delete']]
+  [PASS] search_Surat_sorted ['Meera Joshi', 'Zara Khan']
+GET /search.php?q=amit  -> HTTP 200
+  [PASS] search_amit expected 1, got 1: [['2', 'Amit Desai', 'amit@example.com', '9123456780', 'Vadodara', 'Edit Delete']]
+GET /search.php?q=Vado  -> HTTP 200
+  [PASS] search_Vado expected 1, got 1: [['2', 'Amit Desai', 'amit@example.com', '9123456780', 'Vadodara', 'Edit Delete']]
+GET /search.php?q=nomatch  -> HTTP 200
+  [PASS] search_nomatch expected 0, got 0: [['No matching records.']]
+GET /search.php?q=  -> HTTP 200
+  [PASS] ajax_empty_query_returns_all 
+GET /search.php?q=%27%20OR%20%271%27%3D%271  -> HTTP 200
+  [PASS] ajax_injection_probe_no_leak [['No matching records.']]
+GET /edit.php?id=2  -> HTTP 200
+  [PASS] edit_page_200 
+POST /edit.php?id=2 {"name": "Zara Khan", "email": "zara.k@example.com", "phone": "9000000000", "city": "Ahmedabad", "csrf": "e08e00da..."} -> HTTP 302 Location: index.php
+  [PASS] update_redirect 
+GET /index.php  -> HTTP 200
+  [PASS] update_persisted row=[['2', 'Zara Khan', 'zara.k@example.com', '9000000000', 'Ahmedabad', 'Edit Delete']]
+GET /edit.php?id=999999  -> HTTP 404
+  [PASS] edit_missing_404 
+GET /edit.php?id=abc  -> HTTP 400
+  [PASS] edit_bad_id_400 
+GET /delete.php?id=2  -> HTTP 405
+  [PASS] delete_via_GET_refused_405 
+POST /delete.php {"id": "2", "csrf": "bad..."} -> HTTP 403
+  [PASS] delete_bad_csrf_403 
+POST /delete.php {"id": "2", "csrf": "e08e00da..."} -> HTTP 302 Location: index.php
+  [PASS] delete_redirect 
+GET /index.php  -> HTTP 200
+  [PASS] delete_removed_row remaining=[['3', 'Meera Joshi', 'meera@example.com', '9988776655', 'Surat', 'Edit Delete'], ['1', 'Zara Khan', 'zara@example.com', '9876543210', 'Surat', 'Edit Delete']]
+SUMMARY Program_4: 25/25 PASS 
+################ Program_05 (port 3306, unmodified db.php, no env vars)
+GET /index.php  -> HTTP 200
+  [PASS] index_200 title='Mobile Shop Management with AJAX'
+  [PASS] csrf_token_in_form 
+  form fields: ['brand', 'model', 'price', 'stock']
+POST /index.php {"brand": "Samsung", "model": "Galaxy S24", "price": "79999", "stock": "5", "csrf": "bad..."} -> HTTP 403
+  [PASS] insert_rejected_bad_csrf Invalid CSRF token.
+POST /index.php {"brand": "", "model": "Galaxy S24", "price": "79999", "stock": "5", "csrf": "ba36abfe..."} -> HTTP 200
+  [PASS] validation_empty_field alert='Brand is required.'
+POST /index.php {"brand": "Samsung", "model": "Galaxy S24", "price": "79999", "stock": "5", "csrf": "ba36abfe..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Samsung 
+POST /index.php {"brand": "Apple", "model": "iPhone 15", "price": "69999", "stock": "3", "csrf": "ba36abfe..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Apple 
+POST /index.php {"brand": "Redmi", "model": "Note 13", "price": "15999", "stock": "20", "csrf": "ba36abfe..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Redmi 
+POST /index.php {"brand": "Samsung", "model": "Galaxy A15", "price": "9999", "stock": "12", "csrf": "ba36abfe..."} -> HTTP 302 Location: index.php
+  [PASS] insert_Samsung 
+GET /index.php  -> HTTP 200
+  displayed rows: [['4', 'Samsung', 'Galaxy A15', '9999.00', '12', 'Edit Delete'], ['3', 'Redmi', 'Note 13', '15999.00', '20', 'Edit Delete'], ['2', 'Apple', 'iPhone 15', '69999.00', '3', 'Edit Delete'], ['1', 'Samsung', 'Galaxy S24', '79999.00', '5', 'Edit Delete']]
+  [PASS] display_all_inserted 
+  [PASS] sorted_display column order=['9999.00', '15999.00', '69999.00', '79999.00']
+GET /search.php?q=Samsung  -> HTTP 200
+  [PASS] search_Samsung expected 2, got 2: [['4', 'Samsung', 'Galaxy A15', '9999.00', '12', 'Edit Delete'], ['1', 'Samsung', 'Galaxy S24', '79999.00', '5', 'Edit Delete']]
+  [PASS] search_Samsung_sorted ['9999.00', '79999.00']
+GET /search.php?q=apple  -> HTTP 200
+  [PASS] search_apple expected 1, got 1: [['2', 'Apple', 'iPhone 15', '69999.00', '3', 'Edit Delete']]
+GET /search.php?q=nomatch  -> HTTP 200
+  [PASS] search_nomatch expected 0, got 0: [['No matching records.']]
+GET /search.php?q=  -> HTTP 200
+  [PASS] ajax_empty_query_returns_all 
+GET /search.php?q=%27%20OR%20%271%27%3D%271  -> HTTP 200
+  [PASS] ajax_injection_probe_no_leak [['No matching records.']]
+GET /edit.php?id=4  -> HTTP 200
+  [PASS] edit_page_200 
+POST /edit.php?id=4 {"brand": "Apple", "model": "iPhone 15 Pro", "price": "129999", "stock": "2", "csrf": "ba36abfe..."} -> HTTP 302 Location: index.php
+  [PASS] update_redirect 
+GET /index.php  -> HTTP 200
+  [PASS] update_persisted row=[['4', 'Apple', 'iPhone 15 Pro', '129999.00', '2', 'Edit Delete']]
+GET /edit.php?id=999999  -> HTTP 404
+  [PASS] edit_missing_404 
+GET /edit.php?id=abc  -> HTTP 400
+  [PASS] edit_bad_id_400 
+GET /delete.php?id=4  -> HTTP 405
+  [PASS] delete_via_GET_refused_405 
+POST /delete.php {"id": "4", "csrf": "bad..."} -> HTTP 403
+  [PASS] delete_bad_csrf_403 
+POST /delete.php {"id": "4", "csrf": "ba36abfe..."} -> HTTP 302 Location: index.php
+  [PASS] delete_redirect 
+GET /index.php  -> HTTP 200
+  [PASS] delete_removed_row remaining=[['3', 'Redmi', 'Note 13', '15999.00', '20', 'Edit Delete'], ['2', 'Apple', 'iPhone 15', '69999.00', '3', 'Edit Delete'], ['1', 'Samsung', 'Galaxy S24', '79999.00', '5', 'Edit Delete']]
+SUMMARY Program_5: 24/24 PASS 
